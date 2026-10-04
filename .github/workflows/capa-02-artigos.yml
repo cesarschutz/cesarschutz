@@ -9,6 +9,11 @@ on:
 permissions:
   contents: write
 
+# Os dois workflows de capa fazem commit na main: um espera o outro terminar.
+concurrency:
+  group: commit-na-main
+  cancel-in-progress: false
+
 jobs:
   artigos:
     runs-on: ubuntu-latest
