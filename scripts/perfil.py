@@ -51,12 +51,12 @@ PROJETOS = [  # repositório, descrição, linguagem, status
     ("blog", "O código do blog.cesarschutz.com.br, feito em Astro.", "Astro", "publicando"),
     ("blog-exemplos", "O código que acompanha os artigos do blog: Java, Spring e Terraform.", "Java", "ativo"),
     ("BrainAPI", "Transforma specs OpenAPI em endpoints usáveis em linguagem natural, via MCP.", "Java", "experimento"),
-    ("swagger-agent-adk", "Agentes para APIs Swagger com o Google ADK.", "Python", "experimento"),
+    ("langchain", "Estudos de LangChain: chains com LCEL, agentes com tools, memória e RAG com banco vetorial.", "Python", "estudo"),
     ("google-adk-cards", "Agentes sobre uma API de cartões, com o Google ADK em Java.", "Java", "experimento"),
     ("knowledge-base", "Minha base de conhecimento técnico.", "TypeScript", "em pausa"),
 ]
 COR_LINGUAGEM = {"TypeScript": "#3178c6", "Java": "#b07219", "Python": "#3572A5", "Astro": "#ff5a03"}
-COR_STATUS = {"ativo": "green", "publicando": "green", "experimento": "blue", "em pausa": "muted"}
+COR_STATUS = {"ativo": "green", "publicando": "green", "experimento": "blue", "estudo": "purple", "em pausa": "muted"}
 FORA_DAS_LINGUAGENS = {"HTML", "CSS", "SCSS", "MDX", "Batchfile", "Dockerfile", "Shell", "HCL", "TSQL"}
 
 TEMAS = {
