@@ -154,7 +154,29 @@ eram conteúdo do blog e não sobre mim.
 - **O que eu faço:** as ADRs e a forma como elas são escritas (ADR curta, C4 no Structurizr, padrões).
 - Nada interno aparece nas capas: nenhum nome de ADR, sistema, parceiro ou endereço da empresa.
 
-## 5. Modo claro e escuro: dá?
+## 5. Terceira leva (C7 e C8)
+
+**C7** = [07 · Final](./capas/07-final/) · **C8** = [08 · Terminal final](./capas/08-terminal-final/). Juntam o que foi
+escolhido nas capas anteriores:
+
+| Veio de | O que entrou | Onde |
+|---|---|---|
+| C4 | Linha do tempo com fases, marcos e faixa de formação, sem números de commits | C7 header · C8 `~/trajetória` |
+| C3 · C6 | Janela de terminal, títulos `~/…` e barra de status | C7 · C8 |
+| C6 | `neofetch` com o monograma, agora **CSR** | C7 `~/stack` · C8 header |
+| C6 (pedido novo) | Stack com **um `ls ~/stack/<área>` por categoria** e os ícones embaixo, com todas as opções listadas (sem Kafka) | C7 · C8 |
+| C3 · C6 | Texto animado (`readme-typing-svg`) | C7 · C8, abaixo do header |
+| C4 (pedido novo) | LinkedIn, blog e claude-code-kit como **pílulas** em SVG próprio, claro/escuro | C7 · C8 |
+| C5 + C3 | Cards de projeto (pin) com uma **pílula de status** (ativo, publicando, experimento, em pausa) | C7 · C8 `~/projetos` |
+| C4 | Formação e certificação | C7 · C8 `~/formação` |
+| C5 | Estatísticas e linguagens | C7 · C8 `~/github` |
+| C6 | Sequência + cobrinha | C7 · C8 `$ git log --graph` |
+
+Novo nesta leva: `~/como-eu-trabalho` (perto do time + decisões e desenho, com padrões como exemplos), o cargo
+"arquiteto de software e soluções" e ícones de texto para o que não tem logo (Mockito, Testcontainers, LocalStack,
+WireMock, Allure, SQL Server, AWS SAM, Spring Cloud, Spring AI). Saiu: o gráfico 3D de contribuições e os números de commits.
+
+## 6. Modo claro e escuro: dá?
 
 **Dá, e as três capas já fazem isso.** Existem dois jeitos:
 

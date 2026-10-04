@@ -2,9 +2,41 @@
 
 # Cesar Schutz · capas do perfil
 
-Seis capas para escolher. Todas acompanham o tema do GitHub: clara no modo claro, escura no modo escuro.
+Oito capas para escolher. Todas acompanham o tema do GitHub: clara no modo claro, escura no modo escuro.
 
 </div>
+
+## Terceira leva: versão final
+
+O que você gostou em cada capa, misturado: a linha do tempo da 04, o estilo terminal da 03 e da 06, a stack
+por área com um `ls` por categoria, os cards de projeto da 05 com status, as estatísticas, a sequência e a cobrinha.
+
+### 07 · Final
+
+Linha do tempo no header, pílulas de links, texto animado e todas as seções no estilo terminal (`~/sobre`,
+`~/como-eu-trabalho`, `~/stack`, `~/projetos`…).
+
+<a href="./capas/07-final/">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./capas/07-final/assets/capa-dark.svg">
+  <img src="./capas/07-final/assets/capa-light.svg" width="100%" alt="Capa 07, Final">
+</picture>
+</a>
+
+**[Ver a capa completa →](./capas/07-final/)**
+
+### 08 · Terminal final
+
+A mesma página, com o terminal `neofetch` do CSR no header e a linha do tempo descendo para `~/trajetória`.
+
+<a href="./capas/08-terminal-final/">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./capas/08-terminal-final/assets/capa-dark.svg">
+  <img src="./capas/08-terminal-final/assets/capa-light.svg" width="100%" alt="Capa 08, Terminal final">
+</picture>
+</a>
+
+**[Ver a capa completa →](./capas/08-terminal-final/)**
 
 ## Segunda leva: sobre mim
 

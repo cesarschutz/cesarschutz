@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="Linha do tempo de 2011 até hoje: estágio em Java de 2011 a 2013, desenvolvedor Java SE em 2013, Java EE e JSF em 2015, microsserviços em 2017, plataforma de cartões como dev sênior em 2019, líder técnico em 2020, arquiteto de software e soluções desde 2021 e programa de fidelidade desde 2025. Formação: tecnólogo em ADS, pós em engenharia de software, MBAs em arquitetura de software e em engenharia de software com IA; certificação Agile Scrum Foundation (2018).">
+<title>Linha do tempo de 2011 até hoje: estágio em Java de 2011 a 2013, desenvolvedor Java SE em 2013, Java EE e JSF em 2015, microsserviços em 2017, plataforma de cartões como dev sênior em 2019, líder técnico em 2020, arquiteto de software e soluções desde 2021 e programa de fidelidade desde 2025. Formação: tecnólogo em ADS, pós em engenharia de software, MBAs em arquitetura de software e em engenharia de software com IA; certificação Agile Scrum Foundation (2018).</title>
+<style>
+.sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif}
+.mono{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+.serif{font-family:Georgia,"Times New Roman",Times,serif}
+.b{font-weight:700}
+.i{font-style:italic}
+@keyframes in{from{opacity:0}to{opacity:1}}
+@keyframes up{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes blink{50%{opacity:0}}
+@keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+.f{animation:in .45s ease-out both}
+.u{animation:up .6s ease-out both}
+.blink{animation:blink 1.05s steps(1) infinite}
+.pulse{animation:pulse 2.4s ease-in-out infinite}
+.draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1s ease-out both}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.draw{stroke-dashoffset:0}}
+
+@keyframes pop{0%{opacity:0;transform:scale(.55)}70%{opacity:1;transform:scale(1.06)}100%{opacity:1;transform:scale(1)}}
+.pop{transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.2,.7,.3,1) both}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+</style>
+<defs></defs>
+<rect x=".5" y=".5" width="1199" height="359" rx="16" fill="#f6f8fa" stroke="#d0d7de"/>
+<g class="f" style="animation-delay:0.10s"><text x="64" y="40" font-size="13" fill="#0969da" class="mono b" letter-spacing="3" textLength="78.0" lengthAdjust="spacing" xml:space="preserve">TRAJETÓRIA</text></g>
+<path d="M70 176H1100" stroke="#d8dee4" stroke-width="4" stroke-linecap="round"/>
+<g class="f" style="animation-delay:0.30s"><text x="56.8" y="204" font-size="11" fill="#59636e" class="mono"  textLength="26.4" lengthAdjust="spacing" xml:space="preserve">2011</text></g>
+<circle cx="138.7" cy="176" r="2" fill="#59636e" opacity=".5"/>
+<circle cx="207.3" cy="176" r="2" fill="#59636e" opacity=".5"/>
+<g class="f" style="animation-delay:0.82s"><text x="262.8" y="204" font-size="11" fill="#59636e" class="mono"  textLength="26.4" lengthAdjust="spacing" xml:space="preserve">2014</text></g>
+<circle cx="344.7" cy="176" r="2" fill="#59636e" opacity=".5"/>
+<circle cx="413.3" cy="176" r="2" fill="#59636e" opacity=".5"/>
+<g class="f" style="animation-delay:1.34s"><text x="468.8" y="204" font-size="11" fill="#59636e" class="mono"  textLength="26.4" lengthAdjust="spacing" xml:space="preserve">2017</text></g>
+<circle cx="550.7" cy="176" r="2" fill="#59636e" opacity=".5"/>
+<circle cx="619.3" cy="176" r="2" fill="#59636e" opacity=".5"/>
+<g class="f" style="animation-delay:1.86s"><text x="674.8" y="204" font-size="11" fill="#59636e" class="mono"  textLength="26.4" lengthAdjust="spacing" xml:space="preserve">2020</text></g>
+<circle cx="756.7" cy="176" r="2" fill="#59636e" opacity=".5"/>
+<circle cx="825.3" cy="176" r="2" fill="#59636e" opacity=".5"/>
+<g class="f" style="animation-delay:2.38s"><text x="880.8" y="204" font-size="11" fill="#59636e" class="mono"  textLength="26.4" lengthAdjust="spacing" xml:space="preserve">2023</text></g>
+<circle cx="962.7" cy="176" r="2" fill="#59636e" opacity=".5"/>
+<circle cx="1031.3" cy="176" r="2" fill="#59636e" opacity=".5"/>
+<g class="f" style="animation-delay:2.90s"><text x="1086.8" y="204" font-size="11" fill="#59636e" class="mono"  textLength="26.4" lengthAdjust="spacing" xml:space="preserve">2026</text></g>
+<rect x="133.2" y="172" width="0" height="8" rx="4" fill="#80b7f0"><animate attributeName="width" from="0" to="137.3" begin="0.46s" dur="0.35s" fill="freeze"/></rect>
+<g class="f" style="animation-delay:0.63s"><text x="174.54000000000497" y="232" font-size="13" fill="#80b7f0" class="mono b"  textLength="54.6" lengthAdjust="spacing" xml:space="preserve">estágio</text></g>
+<rect x="270.5" y="172" width="0" height="8" rx="4" fill="#0969da"><animate attributeName="width" from="0" to="410.6" begin="0.81s" dur="1.04s" fill="freeze"/></rect>
+<g class="f" style="animation-delay:1.32s"><text x="405.6200000000057" y="232" font-size="13" fill="#0969da" class="mono b"  textLength="140.4" lengthAdjust="spacing" xml:space="preserve">desenvolvedor Java</text></g>
+<rect x="682.5" y="172" width="0" height="8" rx="4" fill="#1a7f37"><animate attributeName="width" from="0" to="39.8" begin="1.85s" dur="0.10s" fill="freeze"/></rect>
+<rect x="722.3" y="172" width="0" height="8" rx="4" fill="#8250df"><animate attributeName="width" from="0" to="97.5" begin="1.95s" dur="0.25s" fill="freeze"/></rect>
+<g class="f" style="animation-delay:2.07s"><text x="720.3866666666692" y="232" font-size="13" fill="#8250df" class="mono b"  textLength="101.4" lengthAdjust="spacing" xml:space="preserve">líder técnico</text></g>
+<rect x="819.8" y="172" width="0" height="8" rx="4" fill="#bc4c00"><animate attributeName="width" from="0" to="280.2" begin="2.19s" dur="0.71s" fill="freeze"/></rect>
+<g class="f" style="animation-delay:2.55s"><text x="835.1200000000026" y="232" font-size="13" fill="#bc4c00" class="mono b"  textLength="249.6" lengthAdjust="spacing" xml:space="preserve">arquiteto de software e soluções</text></g>
+<path d="M133.2 166V142" stroke="#80b7f0" stroke-dasharray="0" class="f" style="animation-delay:0.46s"/>
+<circle cx="133.2" cy="176" r="8" fill="#f6f8fa" stroke="#80b7f0" stroke-width="3" class="pop" style="animation-delay:0.46s"/>
+<g class="f" style="animation-delay:0.56s"><text x="74.67333333333832" y="118" font-size="13" fill="#1f2328" class="mono b"  textLength="117.0" lengthAdjust="spacing" xml:space="preserve">estágio em Java</text><text x="27.873333333338323" y="136" font-size="13" fill="#59636e" class="mono"  textLength="210.6" lengthAdjust="spacing" xml:space="preserve">sistemas de imagens médicas</text></g>
+<path d="M270.5 166V88" stroke="#0969da" stroke-dasharray="2 3" class="f" style="animation-delay:0.81s"/>
+<circle cx="270.5" cy="176" r="8" fill="#f6f8fa" stroke="#0969da" stroke-width="3" class="pop" style="animation-delay:0.81s"/>
+<g class="f" style="animation-delay:0.91s"><text x="200.30666666667167" y="64" font-size="13" fill="#1f2328" class="mono b"  textLength="140.4" lengthAdjust="spacing" xml:space="preserve">desenvolvedor Java</text><text x="243.20666666667165" y="82" font-size="13" fill="#59636e" class="mono"  textLength="54.6" lengthAdjust="spacing" xml:space="preserve">Java SE</text></g>
+<path d="M370.1 166V142" stroke="#0969da" stroke-dasharray="0" class="f" style="animation-delay:1.06s"/>
+<circle cx="370.1" cy="176" r="8" fill="#f6f8fa" stroke="#0969da" stroke-width="3" class="pop" style="animation-delay:1.06s"/>
+<g class="f" style="animation-delay:1.16s"><text x="319.37333333332583" y="118" font-size="13" fill="#1f2328" class="mono b"  textLength="101.4" lengthAdjust="spacing" xml:space="preserve">Java EE e JSF</text><text x="323.2733333333258" y="136" font-size="13" fill="#59636e" class="mono"  textLength="93.6" lengthAdjust="spacing" xml:space="preserve">sistemas web</text></g>
+<path d="M530.1 166V88" stroke="#0969da" stroke-dasharray="2 3" class="f" style="animation-delay:1.46s"/>
+<circle cx="530.1" cy="176" r="8" fill="#f6f8fa" stroke="#0969da" stroke-width="3" class="pop" style="animation-delay:1.46s"/>
+<g class="f" style="animation-delay:1.56s"><text x="475.46666666666977" y="64" font-size="13" fill="#1f2328" class="mono b"  textLength="109.2" lengthAdjust="spacing" xml:space="preserve">microsserviços</text><text x="444.2666666666698" y="82" font-size="13" fill="#59636e" class="mono"  textLength="171.6" lengthAdjust="spacing" xml:space="preserve">Spring Cloud e Angular</text></g>
+<path d="M682.5 166V142" stroke="#1a7f37" stroke-dasharray="0" class="f" style="animation-delay:1.85s"/>
+<circle cx="682.5" cy="176" r="8" fill="#f6f8fa" stroke="#1a7f37" stroke-width="3" class="pop" style="animation-delay:1.85s"/>
+<g class="f" style="animation-delay:1.95s"><text x="600.6066666666717" y="118" font-size="13" fill="#1f2328" class="mono b"  textLength="163.8" lengthAdjust="spacing" xml:space="preserve">plataforma de cartões</text><text x="624.0066666666717" y="136" font-size="13" fill="#59636e" class="mono"  textLength="117.0" lengthAdjust="spacing" xml:space="preserve">dev Java sênior</text></g>
+<path d="M819.8 166V88" stroke="#bc4c00" stroke-dasharray="2 3" class="f" style="animation-delay:2.19s"/>
+<circle cx="819.8" cy="176" r="8" fill="#f6f8fa" stroke="#bc4c00" stroke-width="3" class="pop" style="animation-delay:2.19s"/>
+<g class="f" style="animation-delay:2.29s"><text x="737.940000000005" y="64" font-size="13" fill="#1f2328" class="mono b"  textLength="163.8" lengthAdjust="spacing" xml:space="preserve">arquiteto de software</text><text x="722.340000000005" y="82" font-size="13" fill="#59636e" class="mono"  textLength="195.0" lengthAdjust="spacing" xml:space="preserve">e soluções, perto do time</text></g>
+<path d="M1089.7 166V142" stroke="#bc4c00" stroke-dasharray="0" class="f" style="animation-delay:2.87s"/>
+<circle cx="1089.7" cy="176" r="8" fill="#f6f8fa" stroke="#bc4c00" stroke-width="3" class="pop" style="animation-delay:2.87s"/>
+<g class="f" style="animation-delay:2.97s"><text x="1003.8999999999937" y="118" font-size="13" fill="#1f2328" class="mono b"  textLength="171.6" lengthAdjust="spacing" xml:space="preserve">programa de fidelidade</text><text x="1031.1999999999937" y="136" font-size="13" fill="#59636e" class="mono"  textLength="117.0" lengthAdjust="spacing" xml:space="preserve">motor de pontos</text></g>
+<g class="f" style="animation-delay:0.30s"><text x="68" y="264" font-size="11" fill="#59636e" class="mono b" letter-spacing="1.5" textLength="52.8" lengthAdjust="spacing" xml:space="preserve">FORMAÇÃO</text></g>
+<path d="M70 280H1100" stroke="#d8dee4" stroke-width="2" stroke-dasharray="2 4"/>
+<rect x="207.3" y="277" width="0" height="6" rx="3" fill="#1b7c83"><animate attributeName="width" from="0" to="446.3" begin="0.65s" dur="1.13s" fill="freeze"/></rect>
+<rect x="756.7" y="277" width="0" height="6" rx="3" fill="#1b7c83"><animate attributeName="width" from="0" to="130.5" begin="2.03s" dur="0.33s" fill="freeze"/></rect>
+<rect x="1060.2" y="272" width="0" height="6" rx="3" fill="#1b7c83"><animate attributeName="width" from="0" to="69.8" begin="2.80s" dur="0.30s" fill="freeze"/></rect>
+<rect x="1065.7" y="282" width="0" height="6" rx="3" fill="#1b7c83"><animate attributeName="width" from="0" to="64.3" begin="2.81s" dur="0.30s" fill="freeze"/></rect>
+<g class="f" style="animation-delay:1.41s"><text x="333.3" y="306" font-size="12" fill="#1f2328" class="mono"  textLength="194.4" lengthAdjust="spacing" xml:space="preserve">tecnólogo em ADS · Senac RS</text></g>
+<g class="f" style="animation-delay:2.40s"><text x="699.5000000000032" y="306" font-size="12" fill="#1f2328" class="mono"  textLength="244.8" lengthAdjust="spacing" xml:space="preserve">pós em eng. de software · Unisinos</text></g>
+<g class="f" style="animation-delay:3.08s"><text x="981.5999999999999" y="306" font-size="12" fill="#1f2328" class="mono"  textLength="194.4" lengthAdjust="spacing" xml:space="preserve">MBA arquitetura de software</text></g>
+<g class="f" style="animation-delay:3.08s"><text x="981.5999999999999" y="324" font-size="12" fill="#1f2328" class="mono"  textLength="194.4" lengthAdjust="spacing" xml:space="preserve">MBA eng. de software com IA</text></g>
+<rect x="592.7" y="274" width="12" height="12" fill="#1a7f37" stroke="#f6f8fa" stroke-width="2" transform="rotate(45 598.7 280)" class="f" style="animation-delay:1.63s"/>
+<g class="f" style="animation-delay:1.83s"><rect x="454.5" y="315" width="9" height="9" fill="#1a7f37" transform="rotate(45 459.0 319.5)"/><text x="470.5333333333271" y="324" font-size="12" fill="#59636e" class="mono"  textLength="360.0" lengthAdjust="spacing" xml:space="preserve">certificação: Agile Scrum Foundation · EXIN (2018)</text></g>
+<circle cx="1100.0" cy="176" r="16" fill="#bc4c00" opacity=".18" class="pulse" style="animation-delay:2.90s"/>
+<circle cx="1100.0" cy="176" r="7" fill="#bc4c00" class="pop" style="animation-delay:2.90s"/>
+<g class="f" style="animation-delay:3.00s"><text x="1122.0" y="181" font-size="13" fill="#bc4c00" class="mono b"  textLength="31.2" lengthAdjust="spacing" xml:space="preserve">hoje</text></g>
+</svg>
