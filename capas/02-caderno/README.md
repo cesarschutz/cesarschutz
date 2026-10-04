@@ -24,11 +24,11 @@ pagamentos, AWS, Kubernetes e IA aplicada, sempre com código que roda e SQL tes
 
 <!-- BLOG-POST-LIST:START -->
 - `03/10/2026` · [Parquet e snapshots — o arquivo não garante a fotografia](https://blog.cesarschutz.com.br/posts/parquet-snapshot-banco-de-dados/)
-- `02/10/2026` · [Quanto custou cada agente? — Do CLAUDE.md ao mod no Claude Code](https://blog.cesarschutz.com.br/posts/claude-code-do-claude-md-ao-mod/)
+- `02/10/2026` · [Um mod do Claude Code na prática — instalação, testes e limites &lpar;parte 2 de 2&rpar;](https://blog.cesarschutz.com.br/posts/claude-code-csr-cockpit/)
+- `02/10/2026` · [Mods do Claude Code — o que são e as peças que vieram antes &lpar;parte 1 de 2&rpar;](https://blog.cesarschutz.com.br/posts/claude-code-do-claude-md-ao-mod/)
 - `29/09/2026` · [Criptografia em repouso e em trânsito — o que é e como ativar no Postgres e no MongoDB](https://blog.cesarschutz.com.br/posts/criptografia-em-repouso-e-em-transito/)
 - `25/09/2026` · [Filtros de serialização no Jackson — mascarando número de cartão nos logs](https://blog.cesarschutz.com.br/posts/jackson-filtros-mascarando-cartao/)
 - `23/09/2026` · [CronJob ou endpoint + fila — onde rodar o batch de uma API Spring Boot no Kubernetes](https://blog.cesarschutz.com.br/posts/cronjob-vs-endpoint-sqs/)
-- `16/09/2026` · [Java 29 &lpar;próxima LTS&rpar; — o que o Java 26 e o 27 já trouxeram](https://blog.cesarschutz.com.br/posts/java-29/)
 
 <!-- BLOG-POST-LIST:END -->
 
