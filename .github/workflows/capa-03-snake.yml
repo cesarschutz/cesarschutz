@@ -1,0 +1,29 @@
+# Capa 03 · Terminal — gera a cobrinha do gráfico de contribuições (claro e escuro).
+name: capa-03 · snake
+
+on:
+  schedule:
+    - cron: "43 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            capas/03-terminal/assets/snake-light.svg?palette=github-light&color_snake=#5a5fc8
+            capas/03-terminal/assets/snake-dark.svg?palette=github-dark&color_snake=#b1b9f9
+      - name: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add capas/03-terminal/assets/snake-*.svg
+          git diff --cached --quiet || git commit -m "chore(capa-03): atualiza snake"
+          git push
