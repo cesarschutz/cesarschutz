@@ -3,7 +3,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/capa-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/capa-light.svg">
-  <img src="./assets/capa-light.svg" width="100%" alt="Cesar Schutz, arquiteto de software. Linha do tempo de 2013 até hoje: primeiros sistemas em Java, pós em sistemas distribuídos, dev back-end da plataforma de cartões de 2019 a 2024 e arquiteto desde 2025.">
+  <img src="./assets/capa-light.svg" width="100%" alt="Cesar Schutz, arquiteto de soluções. Linha do tempo de 2011 até hoje: estágio em Java, desenvolvedor Java, microsserviços, dev sênior na plataforma de cartões em 2019, líder técnico em 2020, arquiteto de soluções desde 2021 e programa de fidelidade desde 2025.">
 </picture>
 
 <br>
@@ -16,12 +16,14 @@
 
 ## Sobre
 
-Sou arquiteto de software. Entrei na plataforma de cartões em 2019 como desenvolvedor back-end e
-passei cinco anos escrevendo os serviços dela: contas, faturas, propostas, boletos, open banking e
-carteiras digitais. Em 2025 passei para a arquitetura dessa mesma plataforma e do programa de fidelidade.
+Sou arquiteto de soluções. Programo em Java desde 2011: comecei em sistemas de imagens médicas,
+passei por Java EE e depois por microsserviços com Spring Cloud e Angular.
 
-Conhecer o código por dentro muda a forma de decidir. Hoje meu trabalho é decidir e registrar: ADRs
-curtas, modelo C4 e padrões que o time reaproveita.
+Em 2019 entrei na plataforma de cartões como dev Java sênior. Em 2020 virei líder técnico e, desde
+2021, sou arquiteto de soluções dessa plataforma: contas, faturas, propostas, boletos, open banking e
+carteiras digitais. Desde 2025 também cuido da arquitetura do programa de fidelidade.
+
+Meu trabalho hoje é decidir e registrar: ADRs curtas, modelo C4 e padrões que o time reaproveita.
 
 ## O que eu faço
 

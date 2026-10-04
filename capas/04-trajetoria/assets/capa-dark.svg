@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-label="Cesar Schutz, arquiteto de software. Linha do tempo de 2013 até hoje: de dev back-end da plataforma de cartões a arquiteto.">
-<title>Cesar Schutz, arquiteto de software. Linha do tempo de 2013 até hoje: de dev back-end da plataforma de cartões a arquiteto.</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" width="1200" height="470" role="img" aria-label="Cesar Schutz, arquiteto de soluções. Linha do tempo de 2011 até hoje: estágio em Java, desenvolvedor Java, microsserviços, plataforma de cartões como dev sênior em 2019, líder técnico em 2020, arquiteto de soluções desde 2021 e programa de fidelidade desde 2025.">
+<title>Cesar Schutz, arquiteto de soluções. Linha do tempo de 2011 até hoje: estágio em Java, desenvolvedor Java, microsserviços, plataforma de cartões como dev sênior em 2019, líder técnico em 2020, arquiteto de soluções desde 2021 e programa de fidelidade desde 2025.</title>
 <style>
 .sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif}
 .mono{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
@@ -23,61 +23,69 @@
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
 </style>
 <defs></defs>
-<rect x=".5" y=".5" width="1199" height="499" rx="16" fill="#161b22" stroke="#30363d"/>
-<g class="f" style="animation-delay:0.10s"><text x="64" y="78" font-size="14" fill="#58a6ff" class="mono b" letter-spacing="3" textLength="176.4" lengthAdjust="spacing" xml:space="preserve">ARQUITETO DE SOFTWARE</text></g>
+<rect x=".5" y=".5" width="1199" height="469" rx="16" fill="#161b22" stroke="#30363d"/>
+<g class="f" style="animation-delay:0.10s"><text x="64" y="78" font-size="14" fill="#58a6ff" class="mono b" letter-spacing="3" textLength="176.4" lengthAdjust="spacing" xml:space="preserve">ARQUITETO DE SOLUÇÕES</text></g>
 <text x="62" y="142" font-size="60" fill="#e6edf3" class="sans b u" style="animation-delay:0.25s">Cesar Schutz</text>
-<text x="64" y="186" font-size="21" fill="#9198a1" class="sans u" style="animation-delay:0.45s">Dev back-end da plataforma de cartões desde 2019;</text>
-<text x="64" y="214" font-size="21" fill="#9198a1" class="sans u" style="animation-delay:0.55s">hoje cuido da arquitetura dela e do programa de fidelidade.</text>
+<text x="64" y="186" font-size="21" fill="#9198a1" class="sans u" style="animation-delay:0.45s">Programo em Java desde 2011. Na plataforma de cartões desde 2019:</text>
+<text x="64" y="214" font-size="21" fill="#9198a1" class="sans u" style="animation-delay:0.55s">dev sênior, líder técnico e, desde 2021, arquiteto de soluções.</text>
 <g class="u" style="animation-delay:0.70s">
 
-<text x="724" y="112" font-size="34" fill="#e6edf3" class="sans b" >40</text>
-<text x="724" y="140" font-size="13" fill="#9198a1" class="mono"  textLength="93.6" lengthAdjust="spacing" xml:space="preserve">serviços com</text><text x="724" y="158" font-size="13" fill="#9198a1" class="mono"  textLength="78.0" lengthAdjust="spacing" xml:space="preserve">código meu</text>
+<text x="790" y="112" font-size="34" fill="#e6edf3" class="sans b" >2011</text>
+<text x="790" y="140" font-size="13" fill="#9198a1" class="mono"  textLength="109.2" lengthAdjust="spacing" xml:space="preserve">início em Java</text><text x="790" y="158" font-size="13" fill="#9198a1" class="mono"  textLength="70.2" lengthAdjust="spacing" xml:space="preserve">(estágio)</text>
 </g>
 <g class="u" style="animation-delay:0.85s">
-<path d="M864 60V170" stroke="#30363d"/>
-<text x="882" y="112" font-size="34" fill="#e6edf3" class="sans b" >2.300+</text>
-<text x="882" y="140" font-size="13" fill="#9198a1" class="mono"  textLength="78.0" lengthAdjust="spacing" xml:space="preserve">commits em</text><text x="882" y="158" font-size="13" fill="#9198a1" class="mono"  textLength="46.8" lengthAdjust="spacing" xml:space="preserve">código</text>
+<path d="M908 60V170" stroke="#30363d"/>
+<text x="926" y="112" font-size="34" fill="#e6edf3" class="sans b" >2021</text>
+<text x="926" y="140" font-size="13" fill="#9198a1" class="mono"  textLength="93.6" lengthAdjust="spacing" xml:space="preserve">arquiteto de</text><text x="926" y="158" font-size="13" fill="#9198a1" class="mono"  textLength="62.4" lengthAdjust="spacing" xml:space="preserve">soluções</text>
 </g>
 <g class="u" style="animation-delay:1.00s">
-<path d="M1022 60V170" stroke="#30363d"/>
-<text x="1040" y="112" font-size="34" fill="#e6edf3" class="sans b" >3.700+</text>
-<text x="1040" y="140" font-size="13" fill="#9198a1" class="mono"  textLength="117.0" lengthAdjust="spacing" xml:space="preserve">commits em docs</text><text x="1040" y="158" font-size="13" fill="#9198a1" class="mono"  textLength="109.2" lengthAdjust="spacing" xml:space="preserve">de arquitetura</text>
+<path d="M1044 60V170" stroke="#30363d"/>
+<text x="1062" y="112" font-size="34" fill="#e6edf3" class="sans b" >1.200+</text>
+<text x="1062" y="140" font-size="13" fill="#9198a1" class="mono"  textLength="78.0" lengthAdjust="spacing" xml:space="preserve">commits em</text><text x="1062" y="158" font-size="13" fill="#9198a1" class="mono"  textLength="85.8" lengthAdjust="spacing" xml:space="preserve">36 serviços</text>
 </g>
-<path d="M70 352H1100" stroke="#21262d" stroke-width="4" stroke-linecap="round"/>
-<path d="M70 352H1100" stroke="#58a6ff" stroke-width="4" stroke-linecap="round" pathLength="1" class="draw" style="animation-delay:.9s;animation-duration:2.4s;animation-timing-function:linear"/>
-<g class="f" style="animation-delay:0.90s"><text x="56.8" y="378" font-size="11" fill="#9198a1" class="mono"  textLength="26.4" lengthAdjust="spacing" xml:space="preserve">2013</text></g>
-<circle cx="149.2" cy="352" r="2" fill="#9198a1" opacity=".5"/>
-<circle cx="228.5" cy="352" r="2" fill="#9198a1" opacity=".5"/>
-<g class="f" style="animation-delay:1.45s"><text x="294.4923076923077" y="378" font-size="11" fill="#9198a1" class="mono"  textLength="26.4" lengthAdjust="spacing" xml:space="preserve">2016</text></g>
-<circle cx="386.9" cy="352" r="2" fill="#9198a1" opacity=".5"/>
-<circle cx="466.2" cy="352" r="2" fill="#9198a1" opacity=".5"/>
-<g class="f" style="animation-delay:2.01s"><text x="532.1846153846153" y="378" font-size="11" fill="#9198a1" class="mono"  textLength="26.4" lengthAdjust="spacing" xml:space="preserve">2019</text></g>
-<circle cx="624.6" cy="352" r="2" fill="#9198a1" opacity=".5"/>
-<circle cx="703.8" cy="352" r="2" fill="#9198a1" opacity=".5"/>
-<g class="f" style="animation-delay:2.56s"><text x="769.876923076923" y="378" font-size="11" fill="#9198a1" class="mono"  textLength="26.4" lengthAdjust="spacing" xml:space="preserve">2022</text></g>
-<circle cx="862.3" cy="352" r="2" fill="#9198a1" opacity=".5"/>
-<circle cx="941.5" cy="352" r="2" fill="#9198a1" opacity=".5"/>
-<g class="f" style="animation-delay:3.12s"><text x="1007.5692307692307" y="378" font-size="11" fill="#9198a1" class="mono"  textLength="26.4" lengthAdjust="spacing" xml:space="preserve">2025</text></g>
-<g class="f" style="animation-delay:3.30s"><text x="1086.8" y="378" font-size="11" fill="#9198a1" class="mono"  textLength="26.4" lengthAdjust="spacing" xml:space="preserve">2026</text></g>
-<rect x="620.7" y="348" width="0" height="8" rx="4" fill="#3fb950"><animate attributeName="width" from="0" to="400.1" begin="2.18s" dur="0.93s" fill="freeze"/></rect>
-<g class="f" style="animation-delay:2.65s"><text x="660.8115384615403" y="410" font-size="13" fill="#3fb950" class="mono"  textLength="319.8" lengthAdjust="spacing" xml:space="preserve">dev back-end · Java, Spring, AWS, eventos</text></g>
-<g class="f" style="animation-delay:2.65s"><text x="676.7115384615403" y="430" font-size="12" fill="#9198a1" class="mono"  textLength="288.0" lengthAdjust="spacing" xml:space="preserve">contas, faturas, propostas, open banking</text></g>
-<circle cx="93.8" cy="352" r="9" fill="#161b22" stroke="#58a6ff" stroke-width="3" class="pop" style="animation-delay:0.96s"/>
-<path d="M93.8 340V322" stroke="#58a6ff" class="f" style="animation-delay:0.96s"/>
-<g class="f" style="animation-delay:1.06s"><text x="23.56923076922716" y="296" font-size="13" fill="#e6edf3" class="mono b"  textLength="140.4" lengthAdjust="spacing" xml:space="preserve">primeiros sistemas</text><text x="66.46923076922717" y="314" font-size="13" fill="#9198a1" class="mono"  textLength="54.6" lengthAdjust="spacing" xml:space="preserve">em Java</text></g>
-<circle cx="545.4" cy="352" r="9" fill="#161b22" stroke="#bc8cff" stroke-width="3" class="pop" style="animation-delay:2.01s"/>
-<g class="f" style="animation-delay:2.11s"><text x="463.4846153846154" y="464" font-size="13" fill="#e6edf3" class="mono b"  textLength="163.8" lengthAdjust="spacing" xml:space="preserve">pós em arquitetura de</text><text x="463.4846153846154" y="482" font-size="13" fill="#9198a1" class="mono"  textLength="163.8" lengthAdjust="spacing" xml:space="preserve">sistemas distribuídos</text></g>
-<path d="M545.4 364V446" stroke="#bc8cff" stroke-dasharray="2 3" class="f" style="animation-delay:2.01s"/>
-<circle cx="620.7" cy="352" r="9" fill="#161b22" stroke="#3fb950" stroke-width="3" class="pop" style="animation-delay:2.18s"/>
-<path d="M620.7 340V322" stroke="#3fb950" class="f" style="animation-delay:2.18s"/>
-<g class="f" style="animation-delay:2.28s"><text x="546.5538461538498" y="296" font-size="13" fill="#e6edf3" class="mono b"  textLength="148.2" lengthAdjust="spacing" xml:space="preserve">entra na plataforma</text><text x="581.6538461538498" y="314" font-size="13" fill="#9198a1" class="mono"  textLength="78.0" lengthAdjust="spacing" xml:space="preserve">de cartões</text></g>
-<circle cx="1020.8" cy="352" r="9" fill="#161b22" stroke="#ffa657" stroke-width="3" class="pop" style="animation-delay:3.12s"/>
-<path d="M1020.8 340V322" stroke="#ffa657" class="f" style="animation-delay:3.12s"/>
-<g class="f" style="animation-delay:3.22s"><text x="962.2692307692307" y="296" font-size="13" fill="#e6edf3" class="mono b"  textLength="117.0" lengthAdjust="spacing" xml:space="preserve">vira arquiteto:</text><text x="954.4692307692308" y="314" font-size="13" fill="#9198a1" class="mono"  textLength="132.6" lengthAdjust="spacing" xml:space="preserve">ADRs, C4, padrões</text></g>
-<circle cx="1068.3" cy="352" r="9" fill="#161b22" stroke="#bc8cff" stroke-width="3" class="pop" style="animation-delay:3.23s"/>
-<g class="f" style="animation-delay:3.33s"><text x="973.7" y="464" font-size="13" fill="#e6edf3" class="mono b"  textLength="132.6" lengthAdjust="spacing" xml:space="preserve">MBA em engenharia</text><text x="969.8" y="482" font-size="13" fill="#9198a1" class="mono"  textLength="140.4" lengthAdjust="spacing" xml:space="preserve">de software com IA</text></g>
-<path d="M1068.3 364V446" stroke="#bc8cff" stroke-dasharray="2 3" class="f" style="animation-delay:3.23s"/>
-<circle cx="1100.0" cy="352" r="16" fill="#58a6ff" opacity=".18" class="pulse" style="animation-delay:3.30s"/>
-<circle cx="1100.0" cy="352" r="8" fill="#58a6ff" class="pop" style="animation-delay:3.30s"/>
-<g class="f" style="animation-delay:3.40s"><text x="1122.0" y="357" font-size="13" fill="#58a6ff" class="mono b"  textLength="31.2" lengthAdjust="spacing" xml:space="preserve">hoje</text></g>
+<path d="M70 372H1100" stroke="#21262d" stroke-width="4" stroke-linecap="round"/>
+<g class="f" style="animation-delay:0.90s"><text x="56.8" y="400" font-size="11" fill="#9198a1" class="mono"  textLength="26.4" lengthAdjust="spacing" xml:space="preserve">2011</text></g>
+<circle cx="138.7" cy="372" r="2" fill="#9198a1" opacity=".5"/>
+<circle cx="207.3" cy="372" r="2" fill="#9198a1" opacity=".5"/>
+<g class="f" style="animation-delay:1.42s"><text x="262.8" y="400" font-size="11" fill="#9198a1" class="mono"  textLength="26.4" lengthAdjust="spacing" xml:space="preserve">2014</text></g>
+<circle cx="344.7" cy="372" r="2" fill="#9198a1" opacity=".5"/>
+<circle cx="413.3" cy="372" r="2" fill="#9198a1" opacity=".5"/>
+<g class="f" style="animation-delay:1.94s"><text x="468.8" y="400" font-size="11" fill="#9198a1" class="mono"  textLength="26.4" lengthAdjust="spacing" xml:space="preserve">2017</text></g>
+<circle cx="550.7" cy="372" r="2" fill="#9198a1" opacity=".5"/>
+<circle cx="619.3" cy="372" r="2" fill="#9198a1" opacity=".5"/>
+<g class="f" style="animation-delay:2.46s"><text x="674.8" y="400" font-size="11" fill="#9198a1" class="mono"  textLength="26.4" lengthAdjust="spacing" xml:space="preserve">2020</text></g>
+<circle cx="756.7" cy="372" r="2" fill="#9198a1" opacity=".5"/>
+<circle cx="825.3" cy="372" r="2" fill="#9198a1" opacity=".5"/>
+<g class="f" style="animation-delay:2.98s"><text x="880.8" y="400" font-size="11" fill="#9198a1" class="mono"  textLength="26.4" lengthAdjust="spacing" xml:space="preserve">2023</text></g>
+<circle cx="962.7" cy="372" r="2" fill="#9198a1" opacity=".5"/>
+<circle cx="1031.3" cy="372" r="2" fill="#9198a1" opacity=".5"/>
+<g class="f" style="animation-delay:3.50s"><text x="1086.8" y="400" font-size="11" fill="#9198a1" class="mono"  textLength="26.4" lengthAdjust="spacing" xml:space="preserve">2026</text></g>
+<rect x="133.2" y="368" width="0" height="8" rx="4" fill="#58a6ff"><animate attributeName="width" from="0" to="548.0" begin="1.06s" dur="1.38s" fill="freeze"/></rect>
+<g class="f" style="animation-delay:1.75s"><text x="336.953333333339" y="428" font-size="13" fill="#58a6ff" class="mono b"  textLength="140.4" lengthAdjust="spacing" xml:space="preserve">desenvolvedor Java</text></g>
+<rect x="682.5" y="368" width="0" height="8" rx="4" fill="#3fb950"><animate attributeName="width" from="0" to="39.8" begin="2.45s" dur="0.10s" fill="freeze"/></rect>
+<rect x="722.3" y="368" width="0" height="8" rx="4" fill="#bc8cff"><animate attributeName="width" from="0" to="97.5" begin="2.55s" dur="0.25s" fill="freeze"/></rect>
+<g class="f" style="animation-delay:2.67s"><text x="720.3866666666692" y="428" font-size="13" fill="#bc8cff" class="mono b"  textLength="101.4" lengthAdjust="spacing" xml:space="preserve">líder técnico</text></g>
+<rect x="819.8" y="368" width="0" height="8" rx="4" fill="#ffa657"><animate attributeName="width" from="0" to="280.2" begin="2.79s" dur="0.71s" fill="freeze"/></rect>
+<g class="f" style="animation-delay:3.15s"><text x="878.0200000000026" y="428" font-size="13" fill="#ffa657" class="mono b"  textLength="163.8" lengthAdjust="spacing" xml:space="preserve">arquiteto de soluções</text></g>
+<path d="M133.2 362V338" stroke="#58a6ff" stroke-dasharray="0" class="f" style="animation-delay:1.06s"/>
+<circle cx="133.2" cy="372" r="8" fill="#161b22" stroke="#58a6ff" stroke-width="3" class="pop" style="animation-delay:1.06s"/>
+<g class="f" style="animation-delay:1.16s"><text x="74.67333333333832" y="314" font-size="13" fill="#e6edf3" class="mono b"  textLength="117.0" lengthAdjust="spacing" xml:space="preserve">estágio em Java</text><text x="27.873333333338323" y="332" font-size="13" fill="#9198a1" class="mono"  textLength="210.6" lengthAdjust="spacing" xml:space="preserve">sistemas de imagens médicas</text></g>
+<path d="M370.1 362V284" stroke="#58a6ff" stroke-dasharray="2 3" class="f" style="animation-delay:1.66s"/>
+<circle cx="370.1" cy="372" r="8" fill="#161b22" stroke="#58a6ff" stroke-width="3" class="pop" style="animation-delay:1.66s"/>
+<g class="f" style="animation-delay:1.76s"><text x="299.87333333332583" y="260" font-size="13" fill="#e6edf3" class="mono b"  textLength="140.4" lengthAdjust="spacing" xml:space="preserve">desenvolvedor Java</text><text x="319.37333333332583" y="278" font-size="13" fill="#9198a1" class="mono"  textLength="101.4" lengthAdjust="spacing" xml:space="preserve">Java EE e JSF</text></g>
+<path d="M530.1 362V338" stroke="#58a6ff" stroke-dasharray="0" class="f" style="animation-delay:2.06s"/>
+<circle cx="530.1" cy="372" r="8" fill="#161b22" stroke="#58a6ff" stroke-width="3" class="pop" style="animation-delay:2.06s"/>
+<g class="f" style="animation-delay:2.16s"><text x="475.46666666666977" y="314" font-size="13" fill="#e6edf3" class="mono b"  textLength="109.2" lengthAdjust="spacing" xml:space="preserve">microsserviços</text><text x="444.2666666666698" y="332" font-size="13" fill="#9198a1" class="mono"  textLength="171.6" lengthAdjust="spacing" xml:space="preserve">Spring Cloud e Angular</text></g>
+<path d="M682.5 362V284" stroke="#3fb950" stroke-dasharray="2 3" class="f" style="animation-delay:2.45s"/>
+<circle cx="682.5" cy="372" r="8" fill="#161b22" stroke="#3fb950" stroke-width="3" class="pop" style="animation-delay:2.45s"/>
+<g class="f" style="animation-delay:2.55s"><text x="600.6066666666717" y="260" font-size="13" fill="#e6edf3" class="mono b"  textLength="163.8" lengthAdjust="spacing" xml:space="preserve">plataforma de cartões</text><text x="624.0066666666717" y="278" font-size="13" fill="#9198a1" class="mono"  textLength="117.0" lengthAdjust="spacing" xml:space="preserve">dev Java sênior</text></g>
+<path d="M819.8 362V338" stroke="#ffa657" stroke-dasharray="0" class="f" style="animation-delay:2.79s"/>
+<circle cx="819.8" cy="372" r="8" fill="#161b22" stroke="#ffa657" stroke-width="3" class="pop" style="animation-delay:2.79s"/>
+<g class="f" style="animation-delay:2.89s"><text x="737.940000000005" y="314" font-size="13" fill="#e6edf3" class="mono b"  textLength="163.8" lengthAdjust="spacing" xml:space="preserve">arquiteto de soluções</text><text x="749.640000000005" y="332" font-size="13" fill="#9198a1" class="mono"  textLength="140.4" lengthAdjust="spacing" xml:space="preserve">ADRs, C4 e padrões</text></g>
+<path d="M1089.7 362V284" stroke="#ffa657" stroke-dasharray="2 3" class="f" style="animation-delay:3.47s"/>
+<circle cx="1089.7" cy="372" r="8" fill="#161b22" stroke="#ffa657" stroke-width="3" class="pop" style="animation-delay:3.47s"/>
+<g class="f" style="animation-delay:3.57s"><text x="1003.8999999999937" y="260" font-size="13" fill="#e6edf3" class="mono b"  textLength="171.6" lengthAdjust="spacing" xml:space="preserve">programa de fidelidade</text><text x="1031.1999999999937" y="278" font-size="13" fill="#9198a1" class="mono"  textLength="117.0" lengthAdjust="spacing" xml:space="preserve">motor de pontos</text></g>
+<circle cx="1100.0" cy="372" r="16" fill="#ffa657" opacity=".18" class="pulse" style="animation-delay:3.50s"/>
+<circle cx="1100.0" cy="372" r="7" fill="#ffa657" class="pop" style="animation-delay:3.50s"/>
+<g class="f" style="animation-delay:3.60s"><text x="1122.0" y="377" font-size="13" fill="#ffa657" class="mono b"  textLength="31.2" lengthAdjust="spacing" xml:space="preserve">hoje</text></g>
 </svg>

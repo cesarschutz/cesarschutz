@@ -3,12 +3,12 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/capa-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/capa-light.svg">
-  <img src="./assets/capa-light.svg" width="100%" alt="Terminal rodando neofetch com o perfil de Cesar Schutz: arquiteto de software, cartões, fidelidade e pagamentos, no GitHub desde 2013, 2.300 commits em 40 serviços, e a stack em ícones.">
+  <img src="./assets/capa-light.svg" width="100%" alt="Terminal rodando neofetch com o perfil de Cesar Schutz: arquiteto de soluções, cartões, fidelidade e pagamentos, Java desde 2011, arquiteto desde 2021, 1.200 commits em 36 serviços, e a stack em ícones.">
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=2600&pause=1100&color=B1B9F9&center=true&vCenter=true&width=820&height=44&lines=Arquiteto+de+software;Cart%C3%B5es+%C2%B7+fidelidade+%C2%B7+pagamentos;Java+%C2%B7+Spring+%C2%B7+AWS+%C2%B7+Kubernetes;ADRs,+C4+e+padr%C3%B5es+que+o+time+reaproveita;Claude+Code+como+segundo+c%C3%A9rebro">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=2600&pause=1100&color=5A5FC8&center=true&vCenter=true&width=820&height=44&lines=Arquiteto+de+software;Cart%C3%B5es+%C2%B7+fidelidade+%C2%B7+pagamentos;Java+%C2%B7+Spring+%C2%B7+AWS+%C2%B7+Kubernetes;ADRs,+C4+e+padr%C3%B5es+que+o+time+reaproveita;Claude+Code+como+segundo+c%C3%A9rebro" alt="Arquiteto de software · Cartões, fidelidade, pagamentos · Java, Spring, AWS, Kubernetes · ADRs, C4 e padrões · Claude Code">
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=2600&pause=1100&color=B1B9F9&center=true&vCenter=true&width=820&height=44&lines=Arquiteto+de+solu%C3%A7%C3%B5es;Cart%C3%B5es+%C2%B7+fidelidade+%C2%B7+pagamentos;Java+%C2%B7+Spring+%C2%B7+AWS+%C2%B7+Kubernetes;ADRs,+C4+e+padr%C3%B5es+que+o+time+reaproveita;Claude+Code+como+segundo+c%C3%A9rebro">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=2600&pause=1100&color=5A5FC8&center=true&vCenter=true&width=820&height=44&lines=Arquiteto+de+solu%C3%A7%C3%B5es;Cart%C3%B5es+%C2%B7+fidelidade+%C2%B7+pagamentos;Java+%C2%B7+Spring+%C2%B7+AWS+%C2%B7+Kubernetes;ADRs,+C4+e+padr%C3%B5es+que+o+time+reaproveita;Claude+Code+como+segundo+c%C3%A9rebro" alt="Arquiteto de soluções · Cartões, fidelidade, pagamentos · Java, Spring, AWS, Kubernetes · ADRs, C4 e padrões · Claude Code">
 </picture>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Cesar%20Schutz-0A66C2?style=for-the-badge)](https://www.linkedin.com/in/cesar-schutz-10341a21/)
@@ -21,9 +21,10 @@
 
 ```console
 cesar@arquitetura:~$ cat sobre.md
-Arquiteto de software. De 2019 a 2024 fui dev back-end da plataforma de cartões:
-contas, faturas, propostas, boletos, open banking e carteiras digitais, em Java e Spring na AWS.
-Desde 2025 cuido da arquitetura dessa plataforma e do programa de fidelidade.
+Arquiteto de soluções. Programo em Java desde 2011.
+2019: dev Java sênior na plataforma de cartões. 2020: líder técnico. 2021: arquiteto de soluções.
+Contas, faturas, propostas, boletos, open banking e carteiras digitais, em Java e Spring na AWS.
+Desde 2025 também cuido da arquitetura do programa de fidelidade.
 
 cesar@arquitetura:~$ cat trabalho.md
 - ADRs curtas: contexto, decisão, alternativas avaliadas e consequências

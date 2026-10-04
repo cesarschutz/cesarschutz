@@ -114,7 +114,7 @@ leva (C4–C6), que fala da minha trajetória em vez do blog.
 | 3 | Pulso de opacidade | ponto "hoje" na linha do tempo | — | `online` na barra de status |
 | 4 | Cursor piscando | — | — | último prompt |
 | 5 | Elemento percorrendo um caminho | — | evento indo de API até worker no mini C4 | — |
-| 6 | Traço que se desenha | linha do tempo de 2013 a 2026 | linha do tempo da identidade | — |
+| 6 | Traço que se desenha | linha do tempo de 2011 a 2026 | linha do tempo da identidade | — |
 | 8 | Janela de terminal | — | — | capa inteira |
 | 10 | `readme-typing-svg` | — | — | abaixo da capa |
 | 11 | Ícones da stack (skillicons) | painel **Stack** por área | bloco **Stack do dia a dia** | `ls ~/stack` na capa e tabela **`~/stack`** |
@@ -133,8 +133,8 @@ eram conteúdo do blog e não sobre mim.
 
 | Recurso | Onde |
 |---|---|
-| Linha do tempo animada com a trajetória real (2013, 2019, 2020–2024 como dev, 2025 arquiteto) | C4 (capa) · C5 (identidade) |
-| Números do trabalho: 40 serviços, 2.300+ commits em código, 3.700+ em documentação de arquitetura | C4 · C5 · C6 |
+| Linha do tempo animada com a trajetória real (estágio em 2011, dev Java, dev sênior em 2019, líder técnico em 2020, arquiteto de soluções em 2021) | C4 (capa) · C5 (identidade) |
+| Números do trabalho: 1.200+ commits (sem merges) em 36 serviços | C4 · C5 · C6 |
 | Ícones da stack **dentro** do SVG, com animação de entrada um a um | C4 · C5 · C6 |
 | Ícones que o skillicons não tem (Quarkus, Dynatrace, Jaeger, Cucumber, JUnit, Claude, MCP, LangChain, Mermaid, Excalidraw, Serverless, Keycloak) desenhados no mesmo molde, a partir do Simple Icons | C4 · C5 · C6 |
 | Ícones de texto para o que não tem logo (ADR, C4/Structurizr, PlantUML, SNS/SQS, Google ADK) | C4 · C6 |
@@ -147,8 +147,9 @@ eram conteúdo do blog e não sobre mim.
 
 ### De onde veio o conteúdo
 
-- **Trajetória e números:** histórico de commits dos repositórios de trabalho (2019 a 2026) e datas dos
-  repositórios públicos.
+- **Trajetória:** experiência no LinkedIn (cargos e datas).
+- **Números:** commits sem merge nos repositórios de serviço (fora repositórios de documentação). Commits
+  de documentação não entraram: na wiki cada salvamento vira um commit, então o número não mede trabalho.
 - **Stack:** arquivos de build dos serviços (`build.gradle`, `package.json`, Terraform, Serverless/SAM).
 - **O que eu faço:** as ADRs e a forma como elas são escritas (ADR curta, C4 no Structurizr, padrões).
 - Nada interno aparece nas capas: nenhum nome de ADR, sistema, parceiro ou endereço da empresa.

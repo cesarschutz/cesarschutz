@@ -3,7 +3,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/capa-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/capa-light.svg">
-  <img src="./assets/capa-light.svg" width="100%" alt="Painel de Cesar Schutz, arquiteto de software: trajetória de 2013 até hoje, 2.300 commits em 40 serviços, 3.700 commits em documentação de arquitetura, como desenha a arquitetura, stack e IA no dia a dia.">
+  <img src="./assets/capa-light.svg" width="100%" alt="Painel de Cesar Schutz, arquiteto de soluções: trajetória de 2011 até hoje, 1.200 commits em 36 serviços, arquiteto desde 2021, como desenha a arquitetura, stack e IA no dia a dia.">
 </picture>
 
 <br>
@@ -15,9 +15,10 @@
 
 ## Sobre
 
-Arquiteto de software. Fui dev back-end da plataforma de cartões de 2019 a 2024 e, desde 2025, cuido
-da arquitetura dela e do programa de fidelidade: ADRs, modelo C4 e padrões como Transactional Outbox e
-Job Pattern. Fora do trabalho, construo ferramentas para programar com IA.
+Arquiteto de soluções. Programo em Java desde 2011. Entrei na plataforma de cartões em 2019 como dev
+sênior, fui líder técnico e, desde 2021, sou arquiteto de soluções dela. Desde 2025, também do programa
+de fidelidade. Trabalho com ADRs, modelo C4 e padrões como Transactional Outbox e Job Pattern. Fora do
+trabalho, construo ferramentas para programar com IA.
 
 ## Projetos
 
@@ -53,7 +54,7 @@ Job Pattern. Fora do trabalho, construo ferramentas para programar com IA.
   </picture>
 </p>
 
-<sub>Os números do painel (40 serviços, 2.300+ e 3.700+ commits) são dos repositórios de trabalho, que não
+<sub>Os números do painel (1.200+ commits em 36 serviços, sem contar merges) são dos repositórios de trabalho, que não
 aparecem aqui. Estes cards mostram só o GitHub público.</sub>
 
 <details>

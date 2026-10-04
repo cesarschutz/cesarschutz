@@ -12,8 +12,8 @@ Feitas a partir da minha trajetória, do trabalho e da stack que uso de verdade.
 
 ### 04 · Trajetória
 
-A linha do tempo de 2013 até hoje, de dev back-end da plataforma de cartões a arquiteto, com os números
-de cada fase. Embaixo, a stack em ícones por área e o gráfico 3D de contribuições.
+A linha do tempo de 2011 até hoje, do estágio em Java a arquiteto de soluções, com as fases de dev,
+líder técnico e arquiteto. Embaixo, a stack em ícones por área e o gráfico 3D de contribuições.
 
 <a href="./capas/04-trajetoria/">
 <picture>
