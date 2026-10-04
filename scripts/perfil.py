@@ -7,7 +7,6 @@ Roda todo dia no GitHub Actions (.github/workflows/perfil.yml). Para rodar local
 Sem GITHUB_TOKEN, as estatísticas saem como "—". Sem os SVGs da cobrinha, a seção some.
 """
 import argparse
-import base64
 import datetime as dt
 import json
 import os
@@ -184,7 +183,7 @@ def terminal(p, stats, cobra):
     W, X, S = 1200, 52, 17
     cw = S * 0.6
     dig = Digitador()
-    b, defs = [], []
+    b, defs, estilos_extra = [], [], []
     y, relogio = 100, 0.3
     largura = W - 2 * X
 
@@ -281,34 +280,6 @@ def terminal(p, stats, cobra):
     relogio = fim + 0.5 + len(FORMACAO) * 0.12
     y += (len(FORMACAO) - 1) * rh + 76
 
-    # projetos
-    fim = comando("ls projetos/", relogio)
-    y += 40
-    secao("projetos", fim + 0.1, "blue")
-    y += 26
-    cw2, ch = (largura - gap) / 2, 132
-    for i, (nome, desc, lang, st) in enumerate(PROJETOS):
-        cx, cy = X + (i % 2) * (cw2 + gap), y + (i // 2) * (ch + 16)
-        t0 = fim + 0.2 + i * 0.08
-        cor = p[COR_STATUS[st]]
-        g = [f'<rect x="{cx:.1f}" y="{cy}" width="{cw2:.1f}" height="{ch}" rx="12" fill="{p["card"]}" stroke="{p["border"]}"/>',
-             f'<g transform="translate({cx + 22:.1f} {cy + 20})" fill="none" stroke="{p["muted"]}" stroke-width="1.8" stroke-linejoin="round">'
-             '<path d="M3 2h13v16H5.5A2.5 2.5 0 0 1 3 15.5z"/><path d="M3 15.5A2.5 2.5 0 0 1 5.5 13H16"/></g>',
-             text(nome, cx + 52, cy + 37, 19, p["fg"], "sans b")]
-        for j, linha in enumerate(textwrap.wrap(desc, 66)[:2]):
-            g.append(text(linha, cx + 22, cy + 68 + j * 21, 15, p["muted"]))
-        g.append(f'<circle cx="{cx + 28:.1f}" cy="{cy + ch - 22}" r="6" fill="{COR_LINGUAGEM[lang]}"/>')
-        g.append(text(lang, cx + 42, cy + ch - 17, 14, p["fg"]))
-        sw = len(st) * 8.4 + 40
-        sx = cx + cw2 - 20 - sw
-        g.append(f'<rect x="{sx:.1f}" y="{cy + ch - 36}" width="{sw:.1f}" height="28" rx="14" fill="none" stroke="{p["border"]}"/>')
-        g.append(f'<circle cx="{sx + 16:.1f}" cy="{cy + ch - 22}" r="4.5" fill="{cor}"'
-                 + (' class="pulse"' if st in ("ativo", "publicando") else "") + "/>")
-        g.append(mono(st, sx + 28, cy + ch - 17.5, 14, p["fg"]))
-        b.append(f'<g class="f" {d(t0)}>' + "".join(g) + "</g>")
-    relogio = fim + 0.4 + len(PROJETOS) * 0.08
-    y += ((len(PROJETOS) + 1) // 2) * (ch + 16) + 30
-
     # estatísticas
     fim = comando("gh status --me", relogio)
     y += 40
@@ -360,10 +331,12 @@ def terminal(p, stats, cobra):
         y += 40
         secao("contribuições", fim + 0.1, "lav")
         y += 22
-        ch_ = largura * 192 / 880
-        b.append(f'<image href="data:image/svg+xml;base64,{cobra}" x="{X}" y="{y}" width="{largura}" height="{ch_:.0f}" class="f" {d(fim + 0.2)}/>')
+        estilo, corpo, (vx, vy, vw, vh) = cobra
+        esc = largura / vw
+        b.append(f'<g class="f" {d(fim + 0.2)}><g transform="translate({X - vx * esc:.2f} {y - vy * esc:.2f}) scale({esc:.4f})">{corpo}</g></g>')
+        estilos_extra.append(estilo)
         relogio = fim + 0.5
-        y += ch_ + 34
+        y += vh * esc + 34
 
     b.append(f'<g class="f" {d(relogio)}>' + mono("❯", X, y, S, p["terra"], cls="mono b") + mono("~", X + 2 * cw, y, S, p["lav"], cls="mono b") + "</g>")
     b.append(f'<g class="f" {d(relogio)}><rect x="{X + 4 * cw}" y="{y - S + 3}" width="{cw}" height="{S + 3}" fill="{p["lav"]}" class="blink"/></g>')
@@ -387,11 +360,47 @@ def terminal(p, stats, cobra):
 
     alt = ("Terminal do perfil. Sobre: " + " ".join(SOBRE) + " Como eu trabalho, perto do time: " + "; ".join(PERTO)
            + ". Decisões e desenho: " + "; ".join(DESENHO) + ". Stack: em construção. Formação: "
-           + "; ".join(f"{t}, {dd}, {pp}" for pp, t, dd, _ in FORMACAO) + ". Projetos: "
-           + "; ".join(f"{n} ({st})" for n, _, _, st in PROJETOS) + ".")
+           + "; ".join(f"{t}, {dd}, {pp}" for pp, t, dd, _ in FORMACAO) + ". Estatísticas do GitHub e a cobrinha das contribuições.")
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{escape(alt)}">\n'
-            f'<title>{escape(alt)}</title>\n<style>{CSS}</style>\n<defs>{"".join(dig.defs + defs)}</defs>\n'
+            f'<title>{escape(alt)}</title>\n<style>{CSS}{"".join(estilos_extra)}</style>\n<defs>{"".join(dig.defs + defs)}</defs>\n'
             + "\n".join(moldura + b) + "\n</svg>\n")
+
+
+def ler_cobra(arquivo):
+    """Lê o SVG do snk e prefixa classes, keyframes e variáveis com k- para colar dentro do terminal."""
+    import re
+    src = arquivo.read_text()
+    vx, vy, vw, vh = (float(n) for n in re.search(r'viewBox="([^"]+)"', src).group(1).split())
+    estilo = re.search(r"<style>(.*?)</style>", src, re.S).group(1)
+    corpo = src[src.index("</style>") + 8:src.rindex("</svg>")]
+    corpo = re.sub(r"<desc>.*?</desc>", "", corpo, flags=re.S)
+    estilo = re.sub(r"--([\w-]+)", r"--k-\1", estilo)
+    estilo = re.sub(r"@keyframes ([\w-]+)", r"@keyframes k-\1", estilo)
+    estilo = re.sub(r"animation-name:([\w-]+)", r"animation-name:k-\1", estilo)
+    estilo = re.sub(r"\.([a-z][\w-]*)", r".k-\1", estilo)
+    corpo = re.sub(r'class="([^"]+)"', lambda m: 'class="' + " ".join("k-" + c for c in m.group(1).split()) + '"', corpo)
+    return estilo, corpo, (vx, vy, vw, vh)
+
+
+def card(p, nome, desc, lang, st):
+    W, H = 600, 180
+    cor = p[COR_STATUS[st]]
+    g = [f'<rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="14" fill="{p["bar"]}" stroke="{p["border"]}" stroke-width="1.5"/>',
+         f'<g transform="translate(28 30)" fill="none" stroke="{p["muted"]}" stroke-width="1.8" stroke-linejoin="round">'
+         '<path d="M3 2h13v16H5.5A2.5 2.5 0 0 1 3 15.5z"/><path d="M3 15.5A2.5 2.5 0 0 1 5.5 13H16"/></g>',
+         text(nome, 60, 47, 22, p["fg"], "sans b")]
+    for j, linha in enumerate(textwrap.wrap(desc, 62)[:2]):
+        g.append(text(linha, 28, 86 + j * 23, 16, p["muted"]))
+    g.append(f'<circle cx="35" cy="{H - 30}" r="6" fill="{COR_LINGUAGEM[lang]}"/>')
+    g.append(text(lang, 50, H - 25, 14, p["fg"]))
+    sw = len(st) * 8.4 + 40
+    sx = W - 24 - sw
+    g.append(f'<rect x="{sx:.1f}" y="{H - 44}" width="{sw:.1f}" height="28" rx="14" fill="none" stroke="{p["border"]}"/>')
+    g.append(f'<circle cx="{sx + 16:.1f}" cy="{H - 30}" r="4.5" fill="{cor}"' + (' class="pulse"' if st in ("ativo", "publicando") else "") + "/>")
+    g.append(mono(st, sx + 28, H - 25.5, 14, p["fg"]))
+    alt = f"{nome}: {desc} Linguagem: {lang}. Status: {st}."
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{escape(alt)}">'
+            f'<title>{escape(alt)}</title><style>{CSS}</style><g class="f">{"".join(g)}</g></svg>\n')
 
 
 def main():
@@ -402,10 +411,12 @@ def main():
     for tema, p in TEMAS.items():
         cobra = None
         if args.snake_dir and (args.snake_dir / f"snake-{tema}.svg").exists():
-            cobra = base64.b64encode((args.snake_dir / f"snake-{tema}.svg").read_bytes()).decode()
+            cobra = ler_cobra(args.snake_dir / f"snake-{tema}.svg")
         destino = RAIZ / "assets" / f"terminal-{tema}.svg"
         destino.write_text(terminal(p, stats, cobra), encoding="utf-8")
         print(destino.relative_to(RAIZ), f"{destino.stat().st_size // 1024} KB")
+        for nome, desc, lang, st in PROJETOS:
+            (RAIZ / "assets" / f"projeto-{nome.lower()}-{tema}.svg").write_text(card(p, nome, desc, lang, st), encoding="utf-8")
     print("estatísticas:", "ok" if stats else "sem GITHUB_TOKEN")
 
 
