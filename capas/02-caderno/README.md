@@ -28,7 +28,8 @@ pagamentos, AWS, Kubernetes e IA aplicada, sempre com código que roda e SQL tes
 - `29/09/2026` · [Criptografia em repouso e em trânsito — o que é e como ativar no Postgres e no MongoDB](https://blog.cesarschutz.com.br/posts/criptografia-em-repouso-e-em-transito/)
 - `25/09/2026` · [Filtros de serialização no Jackson — mascarando número de cartão nos logs](https://blog.cesarschutz.com.br/posts/jackson-filtros-mascarando-cartao/)
 - `23/09/2026` · [CronJob ou endpoint + fila — onde rodar o batch de uma API Spring Boot no Kubernetes](https://blog.cesarschutz.com.br/posts/cronjob-vs-endpoint-sqs/)
-- `16/09/2026` · [Java 29 (próxima LTS) — o que o Java 26 e o 27 já trouxeram](https://blog.cesarschutz.com.br/posts/java-29/)
+- `16/09/2026` · [Java 29 &lpar;próxima LTS&rpar; — o que o Java 26 e o 27 já trouxeram](https://blog.cesarschutz.com.br/posts/java-29/)
+
 <!-- BLOG-POST-LIST:END -->
 
 <sub>Esta lista se atualiza sozinha todo dia, a partir do RSS do blog.</sub>
