@@ -133,7 +133,7 @@ eram conteúdo do blog e não sobre mim.
 
 | Recurso | Onde |
 |---|---|
-| Linha do tempo animada com a trajetória real (estágio em 2011, dev Java, dev sênior em 2019, líder técnico em 2020, arquiteto de soluções em 2021) | C4 (capa) · C5 (identidade) |
+| Linha do tempo animada com a trajetória real (estágio em 2011, dev Java, dev sênior em 2019, líder técnico em 2020, arquiteto de soluções em 2021) e uma faixa de formação (tecnólogo, pós, MBAs e certificação Scrum) | C4 (capa) · C5 (identidade) |
 | Números do trabalho: 1.200+ commits (sem merges) em 36 serviços | C4 · C5 · C6 |
 | Ícones da stack **dentro** do SVG, com animação de entrada um a um | C4 · C5 · C6 |
 | Ícones que o skillicons não tem (Quarkus, Dynatrace, Jaeger, Cucumber, JUnit, Claude, MCP, LangChain, Mermaid, Excalidraw, Serverless, Keycloak) desenhados no mesmo molde, a partir do Simple Icons | C4 · C5 · C6 |
@@ -147,7 +147,7 @@ eram conteúdo do blog e não sobre mim.
 
 ### De onde veio o conteúdo
 
-- **Trajetória:** experiência no LinkedIn (cargos e datas).
+- **Trajetória, formação e certificação:** LinkedIn (cargos, cursos e datas).
 - **Números:** commits sem merge nos repositórios de serviço (fora repositórios de documentação). Commits
   de documentação não entraram: na wiki cada salvamento vira um commit, então o número não mede trabalho.
 - **Stack:** arquivos de build dos serviços (`build.gradle`, `package.json`, Terraform, Serverless/SAM).

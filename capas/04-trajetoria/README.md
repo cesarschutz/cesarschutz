@@ -3,7 +3,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/capa-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/capa-light.svg">
-  <img src="./assets/capa-light.svg" width="100%" alt="Cesar Schutz, arquiteto de soluções. Linha do tempo de 2011 até hoje: estágio em Java, desenvolvedor Java, microsserviços, dev sênior na plataforma de cartões em 2019, líder técnico em 2020, arquiteto de soluções desde 2021 e programa de fidelidade desde 2025.">
+  <img src="./assets/capa-light.svg" width="100%" alt="Cesar Schutz, arquiteto de soluções. Linha do tempo de 2011 até hoje: estágio em Java, desenvolvedor Java, microsserviços, dev sênior na plataforma de cartões em 2019, líder técnico em 2020, arquiteto de soluções desde 2021 e programa de fidelidade desde 2025. Abaixo, a formação: tecnólogo em ADS, pós em engenharia de software, dois MBAs e a certificação Agile Scrum Foundation.">
 </picture>
 
 <br>
@@ -66,11 +66,15 @@ e reaproveitados nas ADRs.
 
 ## Formação
 
-| | |
-|---|---|
-| Pós-graduação | Arquitetura de Sistemas Distribuídos |
-| Pós-graduação | Arquitetura de Software · Full Cycle |
-| MBA | Engenharia de Software com IA · Full Cycle |
+| | Curso | Instituição | Período |
+|---|---|---|---|
+| MBA | Arquitetura de Software | Full Cycle | 2025 – 2026 (em andamento) |
+| MBA | Engenharia de Software com IA | Full Cycle | 2025 – 2026 (em andamento) |
+| Pós-graduação | Engenharia de Software | Unisinos | 2021 – 2022 |
+| Graduação | Tecnólogo em Análise e Desenvolvimento de Sistemas | Senac RS | 2013 – 2019 |
+| Técnico | Informática | Universitário Escola Técnica | 2009 – 2011 |
+
+**Certificação:** Agile Scrum Foundation · EXIN (2018)
 
 ## Projetos pessoais
 

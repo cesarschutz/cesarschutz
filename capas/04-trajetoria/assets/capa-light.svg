@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" width="1200" height="470" role="img" aria-label="Cesar Schutz, arquiteto de soluções. Linha do tempo de 2011 até hoje: estágio em Java, desenvolvedor Java, microsserviços, plataforma de cartões como dev sênior em 2019, líder técnico em 2020, arquiteto de soluções desde 2021 e programa de fidelidade desde 2025.">
-<title>Cesar Schutz, arquiteto de soluções. Linha do tempo de 2011 até hoje: estágio em Java, desenvolvedor Java, microsserviços, plataforma de cartões como dev sênior em 2019, líder técnico em 2020, arquiteto de soluções desde 2021 e programa de fidelidade desde 2025.</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 556" width="1200" height="556" role="img" aria-label="Cesar Schutz, arquiteto de soluções. Linha do tempo de 2011 até hoje: estágio em Java, desenvolvedor Java, microsserviços, plataforma de cartões como dev sênior em 2019, líder técnico em 2020, arquiteto de soluções desde 2021 e programa de fidelidade desde 2025. Formação: tecnólogo em ADS (2013–2019), pós em engenharia de software (2021–2022), MBAs em arquitetura de software e em engenharia de software com IA (2025–2026); certificação Agile Scrum Foundation (2018).">
+<title>Cesar Schutz, arquiteto de soluções. Linha do tempo de 2011 até hoje: estágio em Java, desenvolvedor Java, microsserviços, plataforma de cartões como dev sênior em 2019, líder técnico em 2020, arquiteto de soluções desde 2021 e programa de fidelidade desde 2025. Formação: tecnólogo em ADS (2013–2019), pós em engenharia de software (2021–2022), MBAs em arquitetura de software e em engenharia de software com IA (2025–2026); certificação Agile Scrum Foundation (2018).</title>
 <style>
 .sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif}
 .mono{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
@@ -23,7 +23,7 @@
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
 </style>
 <defs></defs>
-<rect x=".5" y=".5" width="1199" height="469" rx="16" fill="#f6f8fa" stroke="#d0d7de"/>
+<rect x=".5" y=".5" width="1199" height="555" rx="16" fill="#f6f8fa" stroke="#d0d7de"/>
 <g class="f" style="animation-delay:0.10s"><text x="64" y="78" font-size="14" fill="#0969da" class="mono b" letter-spacing="3" textLength="176.4" lengthAdjust="spacing" xml:space="preserve">ARQUITETO DE SOLUÇÕES</text></g>
 <text x="62" y="142" font-size="60" fill="#1f2328" class="sans b u" style="animation-delay:0.25s">Cesar Schutz</text>
 <text x="64" y="186" font-size="21" fill="#59636e" class="sans u" style="animation-delay:0.45s">Programo em Java desde 2011. Na plataforma de cartões desde 2019:</text>
@@ -85,6 +85,18 @@
 <path d="M1089.7 362V284" stroke="#bc4c00" stroke-dasharray="2 3" class="f" style="animation-delay:3.47s"/>
 <circle cx="1089.7" cy="372" r="8" fill="#f6f8fa" stroke="#bc4c00" stroke-width="3" class="pop" style="animation-delay:3.47s"/>
 <g class="f" style="animation-delay:3.57s"><text x="1003.8999999999937" y="260" font-size="13" fill="#1f2328" class="mono b"  textLength="171.6" lengthAdjust="spacing" xml:space="preserve">programa de fidelidade</text><text x="1031.1999999999937" y="278" font-size="13" fill="#59636e" class="mono"  textLength="117.0" lengthAdjust="spacing" xml:space="preserve">motor de pontos</text></g>
+<g class="f" style="animation-delay:0.90s"><text x="68" y="460" font-size="11" fill="#59636e" class="mono b" letter-spacing="1.5" textLength="52.8" lengthAdjust="spacing" xml:space="preserve">FORMAÇÃO</text></g>
+<path d="M70 476H1100" stroke="#d8dee4" stroke-width="2" stroke-dasharray="2 4"/>
+<rect x="207.3" y="473" width="0" height="6" rx="3" fill="#bf3989"><animate attributeName="width" from="0" to="446.3" begin="1.25s" dur="1.13s" fill="freeze"/></rect>
+<rect x="756.7" y="473" width="0" height="6" rx="3" fill="#bf3989"><animate attributeName="width" from="0" to="130.5" begin="2.63s" dur="0.33s" fill="freeze"/></rect>
+<rect x="1060.2" y="468" width="0" height="6" rx="3" fill="#bf3989"><animate attributeName="width" from="0" to="69.8" begin="3.40s" dur="0.30s" fill="freeze"/></rect>
+<rect x="1065.7" y="478" width="0" height="6" rx="3" fill="#bf3989"><animate attributeName="width" from="0" to="64.3" begin="3.41s" dur="0.30s" fill="freeze"/></rect>
+<g class="f" style="animation-delay:2.01s"><text x="333.3" y="502" font-size="12" fill="#1f2328" class="mono"  textLength="194.4" lengthAdjust="spacing" xml:space="preserve">tecnólogo em ADS · Senac RS</text></g>
+<g class="f" style="animation-delay:3.00s"><text x="699.5000000000032" y="502" font-size="12" fill="#1f2328" class="mono"  textLength="244.8" lengthAdjust="spacing" xml:space="preserve">pós em eng. de software · Unisinos</text></g>
+<g class="f" style="animation-delay:3.68s"><text x="981.5999999999999" y="502" font-size="12" fill="#1f2328" class="mono"  textLength="194.4" lengthAdjust="spacing" xml:space="preserve">MBA arquitetura de software</text></g>
+<g class="f" style="animation-delay:3.68s"><text x="981.5999999999999" y="520" font-size="12" fill="#1f2328" class="mono"  textLength="194.4" lengthAdjust="spacing" xml:space="preserve">MBA eng. de software com IA</text></g>
+<rect x="592.7" y="470" width="12" height="12" fill="#1a7f37" stroke="#f6f8fa" stroke-width="2" transform="rotate(45 598.7 476)" class="f" style="animation-delay:2.23s"/>
+<g class="f" style="animation-delay:2.43s"><rect x="454.5" y="511" width="9" height="9" fill="#1a7f37" transform="rotate(45 459.0 515.5)"/><text x="470.5333333333271" y="520" font-size="12" fill="#59636e" class="mono"  textLength="360.0" lengthAdjust="spacing" xml:space="preserve">certificação: Agile Scrum Foundation · EXIN (2018)</text></g>
 <circle cx="1100.0" cy="372" r="16" fill="#bc4c00" opacity=".18" class="pulse" style="animation-delay:3.50s"/>
 <circle cx="1100.0" cy="372" r="7" fill="#bc4c00" class="pop" style="animation-delay:3.50s"/>
 <g class="f" style="animation-delay:3.60s"><text x="1122.0" y="377" font-size="13" fill="#bc4c00" class="mono b"  textLength="31.2" lengthAdjust="spacing" xml:space="preserve">hoje</text></g>
