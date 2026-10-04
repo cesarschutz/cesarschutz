@@ -3,7 +3,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/capa-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/capa-light.svg">
-  <img src="./assets/capa-light.svg" width="100%" alt="Cesar Schutz, arquiteto de soluções. Linha do tempo de 2011 até hoje: estágio em Java, desenvolvedor Java, microsserviços, dev sênior na plataforma de cartões em 2019, líder técnico em 2020, arquiteto de soluções desde 2021 e programa de fidelidade desde 2025. Abaixo, a formação: tecnólogo em ADS, pós em engenharia de software, dois MBAs e a certificação Agile Scrum Foundation.">
+  <img src="./assets/capa-light.svg" width="100%" alt="Cesar Schutz, arquiteto de soluções. Linha do tempo de 2011 até hoje: estágio em Java de 2011 a 2013, desenvolvedor Java SE em 2013, Java EE e JSF em 2015, microsserviços em 2017, dev sênior na plataforma de cartões em 2019, líder técnico em 2020, arquiteto de soluções desde 2021 e programa de fidelidade desde 2025. Abaixo, a formação: tecnólogo em ADS, pós em engenharia de software, dois MBAs e a certificação Agile Scrum Foundation.">
 </picture>
 
 <br>
@@ -16,8 +16,9 @@
 
 ## Sobre
 
-Sou arquiteto de soluções. Programo em Java desde 2011: comecei em sistemas de imagens médicas,
-passei por Java EE e depois por microsserviços com Spring Cloud e Angular.
+Sou arquiteto de soluções. Programo em Java desde 2011: dois anos de estágio em sistemas de imagens
+médicas, desenvolvedor Java SE a partir de 2013, Java EE e JSF a partir de 2015 e, depois, microsserviços
+com Spring Cloud e Angular.
 
 Em 2019 entrei na plataforma de cartões como dev Java sênior. Em 2020 virei líder técnico e, desde
 2021, sou arquiteto de soluções dessa plataforma: contas, faturas, propostas, boletos, open banking e
