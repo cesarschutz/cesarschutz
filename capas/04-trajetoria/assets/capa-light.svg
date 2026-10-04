@@ -92,10 +92,10 @@
 <g class="f" style="animation-delay:3.57s"><text x="1003.8999999999937" y="314" font-size="13" fill="#1f2328" class="mono b"  textLength="171.6" lengthAdjust="spacing" xml:space="preserve">programa de fidelidade</text><text x="1031.1999999999937" y="332" font-size="13" fill="#59636e" class="mono"  textLength="117.0" lengthAdjust="spacing" xml:space="preserve">motor de pontos</text></g>
 <g class="f" style="animation-delay:0.90s"><text x="68" y="460" font-size="11" fill="#59636e" class="mono b" letter-spacing="1.5" textLength="52.8" lengthAdjust="spacing" xml:space="preserve">FORMAÇÃO</text></g>
 <path d="M70 476H1100" stroke="#d8dee4" stroke-width="2" stroke-dasharray="2 4"/>
-<rect x="207.3" y="473" width="0" height="6" rx="3" fill="#bf3989"><animate attributeName="width" from="0" to="446.3" begin="1.25s" dur="1.13s" fill="freeze"/></rect>
-<rect x="756.7" y="473" width="0" height="6" rx="3" fill="#bf3989"><animate attributeName="width" from="0" to="130.5" begin="2.63s" dur="0.33s" fill="freeze"/></rect>
-<rect x="1060.2" y="468" width="0" height="6" rx="3" fill="#bf3989"><animate attributeName="width" from="0" to="69.8" begin="3.40s" dur="0.30s" fill="freeze"/></rect>
-<rect x="1065.7" y="478" width="0" height="6" rx="3" fill="#bf3989"><animate attributeName="width" from="0" to="64.3" begin="3.41s" dur="0.30s" fill="freeze"/></rect>
+<rect x="207.3" y="473" width="0" height="6" rx="3" fill="#1b7c83"><animate attributeName="width" from="0" to="446.3" begin="1.25s" dur="1.13s" fill="freeze"/></rect>
+<rect x="756.7" y="473" width="0" height="6" rx="3" fill="#1b7c83"><animate attributeName="width" from="0" to="130.5" begin="2.63s" dur="0.33s" fill="freeze"/></rect>
+<rect x="1060.2" y="468" width="0" height="6" rx="3" fill="#1b7c83"><animate attributeName="width" from="0" to="69.8" begin="3.40s" dur="0.30s" fill="freeze"/></rect>
+<rect x="1065.7" y="478" width="0" height="6" rx="3" fill="#1b7c83"><animate attributeName="width" from="0" to="64.3" begin="3.41s" dur="0.30s" fill="freeze"/></rect>
 <g class="f" style="animation-delay:2.01s"><text x="333.3" y="502" font-size="12" fill="#1f2328" class="mono"  textLength="194.4" lengthAdjust="spacing" xml:space="preserve">tecnólogo em ADS · Senac RS</text></g>
 <g class="f" style="animation-delay:3.00s"><text x="699.5000000000032" y="502" font-size="12" fill="#1f2328" class="mono"  textLength="244.8" lengthAdjust="spacing" xml:space="preserve">pós em eng. de software · Unisinos</text></g>
 <g class="f" style="animation-delay:3.68s"><text x="981.5999999999999" y="502" font-size="12" fill="#1f2328" class="mono"  textLength="194.4" lengthAdjust="spacing" xml:space="preserve">MBA arquitetura de software</text></g>
