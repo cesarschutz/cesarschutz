@@ -1,21 +1,12 @@
-"""Gera assets/terminal-{light,dark}.svg: o terminal do perfil, com estatísticas e a cobrinha.
+"""Gera os SVGs do perfil em assets/: o terminal (claro e escuro) e os cards de projeto.
 
-Roda todo dia no GitHub Actions (.github/workflows/perfil.yml). Para rodar local:
-
-    GITHUB_TOKEN=$(gh auth token) python3 scripts/perfil.py --snake-dir dist
-
-Sem GITHUB_TOKEN, as estatísticas saem como "—". Sem os SVGs da cobrinha, a seção some.
+Para rodar: python3 scripts/perfil.py
+O workflow .github/workflows/perfil.yml roda o script quando ele muda e gera a cobrinha todo dia.
 """
-import argparse
-import datetime as dt
-import json
-import os
 import textwrap
-import urllib.request
 from pathlib import Path
 from xml.sax.saxutils import escape
 
-USUARIO = "cesarschutz"
 RAIZ = Path(__file__).resolve().parent.parent
 
 # ---------------------------------------------------------------- conteúdo
@@ -56,7 +47,6 @@ PROJETOS = [  # repositório, descrição, linguagem, status
 ]
 COR_LINGUAGEM = {"TypeScript": "#3178c6", "Java": "#b07219", "Python": "#3572A5", "Astro": "#ff5a03"}
 COR_STATUS = {"ativo": "green", "publicando": "green", "experimento": "blue", "estudo": "purple", "em pausa": "muted"}
-FORA_DAS_LINGUAGENS = {"HTML", "CSS", "SCSS", "MDX", "Batchfile", "Dockerfile", "Shell", "HCL", "TSQL"}
 
 TEMAS = {
     "light": dict(win="#ffffff", bar="#f6f8fa", card="#f6f8fa", border="#d0d7de", faint="#d8dee4", fg="#1f2328",
@@ -66,62 +56,6 @@ TEMAS = {
                  muted="#9198a1", blue="#58a6ff", purple="#bc8cff", green="#3fb950", orange="#ffa657",
                  teal="#39c5cf", lav="#b1b9f9", terra="#d77757", pill_fg="#161b22"),
 }
-
-# ---------------------------------------------------------------- estatísticas
-
-CONSULTA = """
-query($login: String!) {
-  user(login: $login) {
-    contributionsCollection {
-      totalCommitContributions
-      contributionCalendar { totalContributions weeks { contributionDays { date contributionCount } } }
-    }
-    repositories(ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC, first: 100) {
-      totalCount
-      nodes { stargazerCount languages(first: 10, orderBy: {field: SIZE, direction: DESC}) { edges { size node { name color } } } }
-    }
-  }
-}"""
-
-
-def estatisticas():
-    token = os.environ.get("GITHUB_TOKEN")
-    if not token:
-        return None
-    corpo = json.dumps({"query": CONSULTA, "variables": {"login": USUARIO}}).encode()
-    req = urllib.request.Request("https://api.github.com/graphql", corpo,
-                                 {"Authorization": f"bearer {token}", "User-Agent": "perfil"})
-    u = json.load(urllib.request.urlopen(req, timeout=30))["data"]["user"]
-    cal = u["contributionsCollection"]["contributionCalendar"]
-    dias = [x for w in cal["weeks"] for x in w["contributionDays"]]
-    hoje = dt.date.fromisoformat(dias[-1]["date"])
-    atual, i = 0, len(dias) - 1
-    if dias[i]["contributionCount"] == 0:  # hoje ainda sem commit não quebra a sequência
-        i -= 1
-    while i >= 0 and dias[i]["contributionCount"] > 0:
-        atual, i = atual + 1, i - 1
-    maior = corrida = 0
-    for x in dias:
-        corrida = corrida + 1 if x["contributionCount"] > 0 else 0
-        maior = max(maior, corrida)
-    linguagens = {}
-    for repo in u["repositories"]["nodes"]:
-        for e in repo["languages"]["edges"]:
-            nome = e["node"]["name"]
-            if nome not in FORA_DAS_LINGUAGENS:
-                cor = e["node"]["color"] or "#8b949e"
-                linguagens[nome] = (linguagens.get(nome, (0, cor))[0] + e["size"], cor)
-    total = sum(v[0] for v in linguagens.values()) or 1
-    top = sorted(linguagens.items(), key=lambda kv: -kv[1][0])[:6]
-    return {
-        "contribuicoes": cal["totalContributions"],
-        "commits": u["contributionsCollection"]["totalCommitContributions"],
-        "repos": u["repositories"]["totalCount"],
-        "estrelas": sum(r["stargazerCount"] for r in u["repositories"]["nodes"]),
-        "atual": atual, "maior": maior,
-        "linguagens": [(n, cor, tam / total) for n, (tam, cor) in top if tam / total >= 0.01],
-        "data": hoje.strftime("%d/%m/%Y"),
-    }
 
 # ---------------------------------------------------------------- SVG
 
@@ -179,11 +113,11 @@ class Digitador:
         return mono(s, x, y, size, fill).replace("<text ", f'<text clip-path="url(#{cid})" ', 1), begin + n / cps
 
 
-def terminal(p, stats, cobra):
+def terminal(p):
     W, X, S = 1200, 52, 17
     cw = S * 0.6
     dig = Digitador()
-    b, defs, estilos_extra = [], [], []
+    b, defs = [], []
     y, relogio = 100, 0.3
     largura = W - 2 * X
 
@@ -280,64 +214,6 @@ def terminal(p, stats, cobra):
     relogio = fim + 0.5 + len(FORMACAO) * 0.12
     y += (len(FORMACAO) - 1) * rh + 76
 
-    # estatísticas
-    fim = comando("gh status --me", relogio)
-    y += 40
-    secao("github", fim + 0.1, "green")
-    y += 26
-    s = stats or {}
-    metricas = [
-        (f'{s.get("contribuicoes", "—")}', "contribuições", "nos últimos 12 meses"),
-        (f'{s.get("commits", "—")}', "commits", "nos últimos 12 meses"),
-        (f'{s.get("atual", "—")}', "sequência atual", f'maior: {s.get("maior", "—")} dias'),
-        (f'{s.get("repos", "—")}', "repositórios", f'públicos · {s.get("estrelas", "—")} estrelas'),
-    ]
-    mw = (largura - 3 * 16) / 4
-    for i, (num, l1, l2) in enumerate(metricas):
-        mx, t0 = X + i * (mw + 16), fim + 0.2 + i * 0.1
-        b.append(f'<g class="f" {d(t0)}><rect x="{mx:.1f}" y="{y}" width="{mw:.1f}" height="104" rx="12" fill="{p["card"]}" stroke="{p["border"]}"/>'
-                 + text(num, mx + 20, y + 50, 34, p["fg"], "sans b") + text(l1, mx + 20, y + 76, 15, p["fg"])
-                 + text(l2, mx + 20, y + 95, 13, p["muted"]) + "</g>")
-    y += 104 + 34
-    langs = s.get("linguagens") or []
-    if langs:
-        t0 = fim + 0.7
-        b.append(f'<g class="f" {d(t0)}>' + text("linguagens mais usadas nos repositórios públicos", X, y, 15, p["muted"]) + "</g>")
-        y += 16
-        soma = sum(pct for _, _, pct in langs) or 1
-        defs.append(f'<clipPath id="langs"><rect x="{X}" y="{y}" width="{largura}" height="12" rx="6"/></clipPath>')
-        bar, x = [], X
-        for nome, cor, pct in langs:
-            w = largura * pct / soma
-            bar.append(f'<rect x="{x:.1f}" y="{y}" width="{w:.1f}" height="12" fill="{cor}"/>')
-            x += w
-        b.append(f'<g clip-path="url(#langs)" class="f" {d(t0)}>' + "".join(bar) + "</g>")
-        y += 38
-        x = X
-        for nome, cor, pct in langs:
-            rot = f"{nome} {pct * 100:.0f}%"
-            b.append(f'<g class="f" {d(t0 + 0.1)}><circle cx="{x + 6:.1f}" cy="{y - 5}" r="6" fill="{cor}"/>'
-                     + text(rot, x + 18, y, 15, p["fg"]) + "</g>")
-            x += 18 + len(rot) * 8.4 + 30
-        y += 26
-    if s.get("data"):
-        b.append(f'<g class="f" {d(fim + 0.8)}>' + mono(f'atualizado em {s["data"]}', W - X - 23 * 7.2, y, 12, p["muted"]) + "</g>")
-    relogio = fim + 1.0
-    y += 30
-
-    # git log --graph
-    if cobra:
-        fim = comando("git log --graph", relogio)
-        y += 40
-        secao("contribuições", fim + 0.1, "lav")
-        y += 22
-        estilo, corpo, (vx, vy, vw, vh) = cobra
-        esc = largura / vw
-        b.append(f'<g class="f" {d(fim + 0.2)}><g transform="translate({X - vx * esc:.2f} {y - vy * esc:.2f}) scale({esc:.4f})">{corpo}</g></g>')
-        estilos_extra.append(estilo)
-        relogio = fim + 0.5
-        y += vh * esc + 34
-
     b.append(f'<g class="f" {d(relogio)}>' + mono("❯", X, y, S, p["terra"], cls="mono b") + mono("~", X + 2 * cw, y, S, p["lav"], cls="mono b") + "</g>")
     b.append(f'<g class="f" {d(relogio)}><rect x="{X + 4 * cw}" y="{y - S + 3}" width="{cw}" height="{S + 3}" fill="{p["lav"]}" class="blink"/></g>')
     H = int(y + 32 + 44)
@@ -360,26 +236,10 @@ def terminal(p, stats, cobra):
 
     alt = ("Terminal do perfil. Sobre: " + " ".join(SOBRE) + " Como eu trabalho, perto do time: " + "; ".join(PERTO)
            + ". Decisões e desenho: " + "; ".join(DESENHO) + ". Stack: em construção. Formação: "
-           + "; ".join(f"{t}, {dd}, {pp}" for pp, t, dd, _ in FORMACAO) + ". Estatísticas do GitHub e a cobrinha das contribuições.")
+           + "; ".join(f"{t}, {dd}, {pp}" for pp, t, dd, _ in FORMACAO) + ".")
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{escape(alt)}">\n'
-            f'<title>{escape(alt)}</title>\n<style>{CSS}{"".join(estilos_extra)}</style>\n<defs>{"".join(dig.defs + defs)}</defs>\n'
+            f'<title>{escape(alt)}</title>\n<style>{CSS}</style>\n<defs>{"".join(dig.defs + defs)}</defs>\n'
             + "\n".join(moldura + b) + "\n</svg>\n")
-
-
-def ler_cobra(arquivo):
-    """Lê o SVG do snk e prefixa classes, keyframes e variáveis com k- para colar dentro do terminal."""
-    import re
-    src = arquivo.read_text()
-    vx, vy, vw, vh = (float(n) for n in re.search(r'viewBox="([^"]+)"', src).group(1).split())
-    estilo = re.search(r"<style>(.*?)</style>", src, re.S).group(1)
-    corpo = src[src.index("</style>") + 8:src.rindex("</svg>")]
-    corpo = re.sub(r"<desc>.*?</desc>", "", corpo, flags=re.S)
-    estilo = re.sub(r"--([\w-]+)", r"--k-\1", estilo)
-    estilo = re.sub(r"@keyframes ([\w-]+)", r"@keyframes k-\1", estilo)
-    estilo = re.sub(r"animation-name:([\w-]+)", r"animation-name:k-\1", estilo)
-    estilo = re.sub(r"\.([a-z][\w-]*)", r".k-\1", estilo)
-    corpo = re.sub(r'class="([^"]+)"', lambda m: 'class="' + " ".join("k-" + c for c in m.group(1).split()) + '"', corpo)
-    return estilo, corpo, (vx, vy, vw, vh)
 
 
 def card(p, nome, desc, lang, st):
@@ -404,20 +264,12 @@ def card(p, nome, desc, lang, st):
 
 
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--snake-dir", type=Path, help="pasta com snake-light.svg e snake-dark.svg")
-    args = ap.parse_args()
-    stats = estatisticas()
     for tema, p in TEMAS.items():
-        cobra = None
-        if args.snake_dir and (args.snake_dir / f"snake-{tema}.svg").exists():
-            cobra = ler_cobra(args.snake_dir / f"snake-{tema}.svg")
         destino = RAIZ / "assets" / f"terminal-{tema}.svg"
-        destino.write_text(terminal(p, stats, cobra), encoding="utf-8")
+        destino.write_text(terminal(p), encoding="utf-8")
         print(destino.relative_to(RAIZ), f"{destino.stat().st_size // 1024} KB")
         for nome, desc, lang, st in PROJETOS:
             (RAIZ / "assets" / f"projeto-{nome.lower()}-{tema}.svg").write_text(card(p, nome, desc, lang, st), encoding="utf-8")
-    print("estatísticas:", "ok" if stats else "sem GITHUB_TOKEN")
 
 
 if __name__ == "__main__":

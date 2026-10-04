@@ -12,7 +12,7 @@
 
 <br>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/terminal-dark.svg"><img src="./assets/terminal-light.svg" width="100%" alt="Terminal com o sobre, como eu trabalho, a stack em construção, a formação, as estatísticas do GitHub e a cobrinha das contribuições"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/terminal-dark.svg"><img src="./assets/terminal-light.svg" width="100%" alt="Terminal com o sobre, como eu trabalho, a stack em construção e a formação"></picture>
 
 ### `~/projetos`
 
@@ -26,3 +26,18 @@
 <a href="https://github.com/cesarschutz/google-adk-cards"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/projeto-google-adk-cards-dark.svg"><img src="./assets/projeto-google-adk-cards-light.svg" width="49%" alt="google-adk-cards"></picture></a>
 <a href="https://github.com/cesarschutz/knowledge-base"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/projeto-knowledge-base-dark.svg"><img src="./assets/projeto-knowledge-base-light.svg" width="49%" alt="knowledge-base"></picture></a>
 </p>
+
+### `~/github`
+
+<p align="center">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=cesarschutz&show_icons=true&hide_rank=true&hide=stars,issues&include_all_commits=true&locale=pt-br&theme=github_dark&bg_color=161b22&border_color=30363d"><img src="https://github-readme-stats.vercel.app/api?username=cesarschutz&show_icons=true&hide_rank=true&hide=stars,issues&include_all_commits=true&locale=pt-br&bg_color=f6f8fa&border_color=d0d7de" height="165" alt="Estatísticas do GitHub"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=cesarschutz&layout=compact&langs_count=8&locale=pt-br&theme=github_dark&bg_color=161b22&border_color=30363d"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cesarschutz&layout=compact&langs_count=8&locale=pt-br&bg_color=f6f8fa&border_color=d0d7de" height="165" alt="Linguagens mais usadas"></picture>
+</p>
+
+### `$ git log --graph`
+
+<p align="center">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=cesarschutz&locale=pt_BR&hide_border=true&theme=dark&background=161B22&ring=B1B9F9&fire=D77757&currStreakLabel=B1B9F9"><img src="https://streak-stats.demolab.com?user=cesarschutz&locale=pt_BR&hide_border=true&theme=default&ring=5A5FC8&fire=B4542F&currStreakLabel=5A5FC8"  alt="Sequência de contribuições no GitHub"></picture>
+</p>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/snake-dark.svg"><img src="./assets/snake-light.svg" width="100%" alt="A cobrinha percorrendo o gráfico de contribuições do último ano"></picture>
