@@ -1,0 +1,41 @@
+# Redesenha o terminal do perfil todo dia: estatísticas do GitHub + cobrinha das contribuições.
+name: perfil
+
+on:
+  schedule:
+    - cron: "43 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["scripts/perfil.py"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: commit-na-main
+  cancel-in-progress: false
+
+jobs:
+  terminal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-light.svg?palette=github-light&color_snake=#5a5fc8
+            dist/snake-dark.svg?palette=github-dark&color_snake=#b1b9f9&color_dots=#21262d,#0e4429,#006d32,#26a641,#39d353
+      - name: gera o terminal
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/perfil.py --snake-dir dist
+      - name: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/terminal-*.svg
+          git diff --cached --quiet || git commit -m "chore: atualiza o terminal do perfil"
+          git pull --rebase origin main
+          git push

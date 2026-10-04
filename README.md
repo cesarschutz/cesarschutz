@@ -12,32 +12,6 @@
 
 <br>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/terminal-dark.svg"><img src="./assets/terminal-light.svg" width="100%" alt="Terminal com o sobre, como eu trabalho, a stack em construção e a formação"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/terminal-dark.svg"><img src="./assets/terminal-light.svg" width="100%" alt="Terminal com o sobre, como eu trabalho, a stack em construção, a formação, os projetos, as estatísticas do GitHub e a cobrinha das contribuições"></picture>
 
-### `~/projetos`
-
-<p align="center">
-<a href="https://github.com/cesarschutz/claude-code-kit"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/projeto-claude-code-kit-dark.svg"><img src="./assets/projeto-claude-code-kit-light.svg" width="49%" alt="claude-code-kit"></picture></a>
-<a href="https://github.com/cesarschutz/CSRFinance"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/projeto-csrfinance-dark.svg"><img src="./assets/projeto-csrfinance-light.svg" width="49%" alt="CSRFinance"></picture></a>
-<a href="https://github.com/cesarschutz/blog"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/projeto-blog-dark.svg"><img src="./assets/projeto-blog-light.svg" width="49%" alt="blog"></picture></a>
-<a href="https://github.com/cesarschutz/blog-exemplos"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/projeto-blog-exemplos-dark.svg"><img src="./assets/projeto-blog-exemplos-light.svg" width="49%" alt="blog-exemplos"></picture></a>
-<a href="https://github.com/cesarschutz/BrainAPI"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/projeto-brainapi-dark.svg"><img src="./assets/projeto-brainapi-light.svg" width="49%" alt="BrainAPI"></picture></a>
-<a href="https://github.com/cesarschutz/swagger-agent-adk"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/projeto-swagger-agent-adk-dark.svg"><img src="./assets/projeto-swagger-agent-adk-light.svg" width="49%" alt="swagger-agent-adk"></picture></a>
-<a href="https://github.com/cesarschutz/google-adk-cards"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/projeto-google-adk-cards-dark.svg"><img src="./assets/projeto-google-adk-cards-light.svg" width="49%" alt="google-adk-cards"></picture></a>
-<a href="https://github.com/cesarschutz/knowledge-base"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/projeto-knowledge-base-dark.svg"><img src="./assets/projeto-knowledge-base-light.svg" width="49%" alt="knowledge-base"></picture></a>
-</p>
-
-### `~/github`
-
-<p align="center">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=cesarschutz&show_icons=true&hide_rank=true&hide=stars,issues&include_all_commits=true&locale=pt-br&theme=github_dark&bg_color=161b22&border_color=30363d"><img src="https://github-readme-stats.vercel.app/api?username=cesarschutz&show_icons=true&hide_rank=true&hide=stars,issues&include_all_commits=true&locale=pt-br&bg_color=f6f8fa&border_color=d0d7de" height="165" alt="Estatísticas do GitHub"></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=cesarschutz&layout=compact&langs_count=8&locale=pt-br&theme=github_dark&bg_color=161b22&border_color=30363d"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cesarschutz&layout=compact&langs_count=8&locale=pt-br&bg_color=f6f8fa&border_color=d0d7de" height="165" alt="Linguagens mais usadas"></picture>
-</p>
-
-### `$ git log --graph`
-
-<p align="center">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=cesarschutz&locale=pt_BR&hide_border=true&theme=dark&background=161B22&ring=B1B9F9&fire=D77757&currStreakLabel=B1B9F9"><img src="https://streak-stats.demolab.com?user=cesarschutz&locale=pt_BR&hide_border=true&theme=default&ring=5A5FC8&fire=B4542F&currStreakLabel=5A5FC8"  alt="Sequência de contribuições no GitHub"></picture>
-</p>
-
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/snake-dark.svg"><img src="./assets/snake-light.svg" width="100%" alt="A cobrinha percorrendo o gráfico de contribuições do último ano"></picture>
+<p align="center"><sub><a href="https://github.com/cesarschutz/claude-code-kit">claude-code-kit</a> · <a href="https://github.com/cesarschutz/CSRFinance">CSRFinance</a> · <a href="https://github.com/cesarschutz/blog">blog</a> · <a href="https://github.com/cesarschutz/blog-exemplos">blog-exemplos</a> · <a href="https://github.com/cesarschutz/BrainAPI">BrainAPI</a> · <a href="https://github.com/cesarschutz/swagger-agent-adk">swagger-agent-adk</a> · <a href="https://github.com/cesarschutz/google-adk-cards">google-adk-cards</a> · <a href="https://github.com/cesarschutz/knowledge-base">knowledge-base</a></sub></p>
