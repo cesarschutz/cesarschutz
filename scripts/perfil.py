@@ -126,7 +126,7 @@ class Digitador:
 # ---------------------------------------------------------------- header: linha do tempo
 
 def cabecalho(p):
-    W, H = 1200, 614
+    W, H = 1200, 632
     b = [f'<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="16" fill="{p["hdr"]}" stroke="{p["border"]}"/>']
     b.append(f'<g class="f" {d(0.1)}>' + mono("ARQUITETO DE SOFTWARE E SOLUÇÕES", 64, 80, 17, p["blue"], 'letter-spacing="3"', "mono b") + "</g>")
     b.append(text("Cesar Schutz", 62, 150, 66, p["fg"], "sans b u", d(0.25)))
@@ -189,17 +189,24 @@ def cabecalho(p):
                  f'<animate attributeName="width" from="0" to="{xb - xa:.1f}" begin="{t_of(ya):.2f}s" '
                  f'dur="{max(t_of(min(yb, 2026)) - t_of(ya), .3):.2f}s" fill="freeze"/></rect>')
     fs = 16
-    for cx, dy, s, tt in ((yx(2016.25), 34, "tecnólogo em ADS · Senac RS", 2016), (yx(2021.95), 34, "pós em eng. de software · Unisinos", 2022),
-                          (None, 58, "MBA arquitetura de software", 2025.9), (None, 82, "MBA eng. de software com IA", 2025.9)):
-        cx = cx if cx is not None else W - 24 - len(s) * fs * 0.6 / 2
-        b.append(f'<g class="f" {d(t_of(tt) + 0.2)}>' + cx_mono(s, centro(cx, s, fs), ly2 + dy, fs, p["fg"]) + "</g>")
+    risco = lambda x, y1, y2, cor, t: (f'<path d="M{x:.1f} {y1}V{y2}" stroke="{p[cor]}" stroke-width="1.5" class="f" {d(t)}/>')
+    # cursos: risquinha da barra até o texto, como nos marcos de cima
+    for cx, s, tt in ((yx(2016.25), "tecnólogo em ADS · Senac RS", 2016), (yx(2021.95), "pós em eng. de software · Unisinos", 2022)):
+        b.append(risco(cx, ly2 + 5, ly2 + 18, "teal", t_of(tt) + 0.2))
+        b.append(f'<g class="f" {d(t_of(tt) + 0.2)}>' + cx_mono(s, centro(cx, s, fs), ly2 + 36, fs, p["fg"]) + "</g>")
+    # os dois MBAs: uma risquinha da dupla de barras até o bloco de texto
+    xm = yx(2026.05)
+    b.append(risco(xm, ly2 + 11, ly2 + 42, "teal", t_of(2025.9) + 0.2))
+    for dy, s in ((60, "MBA arquitetura de software"), (84, "MBA eng. de software com IA")):
+        b.append(f'<g class="f" {d(t_of(2025.9) + 0.2)}>' + mono(s, W - 24 - len(s) * fs * 0.6, ly2 + dy, fs, p["fg"]) + "</g>")
+    # certificação: risquinha do losango até o texto, que termina junto dela
     xc = yx(2018.7)
+    cert = "certificação: Agile Scrum Foundation · EXIN (2018)"
+    b.append(risco(xc, ly2 + 9, ly2 + 64, "green", t_of(2018.7) + 0.2))
+    b.append(f'<path d="M{xc:.1f} {ly2 + 64}h-10" stroke="{p["green"]}" stroke-width="1.5" class="f" {d(t_of(2018.7) + 0.2)}/>')
+    b.append(f'<g class="f" {d(t_of(2018.7) + 0.2)}>' + mono(cert, xc - 16 - len(cert) * fs * 0.6, ly2 + 70, fs, p["muted"]) + "</g>")
     b.append(f'<rect x="{xc - 7:.1f}" y="{ly2 - 7}" width="14" height="14" fill="{p["green"]}" stroke="{p["hdr"]}" stroke-width="2" '
              f'transform="rotate(45 {xc:.1f} {ly2})" class="f" {d(t_of(2018.7))}/>')
-    xl = 300
-    b.append(f'<g class="f" {d(t_of(2018.7) + 0.2)}>'
-             f'<rect x="{xl}" y="{ly2 + 47}" width="10" height="10" fill="{p["green"]}" transform="rotate(45 {xl + 5} {ly2 + 52})"/>'
-             + mono("certificação: Agile Scrum Foundation · EXIN (2018)", xl + 20, ly2 + 58, fs, p["muted"]) + "</g>")
 
     xe, t0 = yx(2026), t_of(2026)
     b.append(f'<circle cx="{xe:.1f}" cy="{ly}" r="18" fill="{p["orange"]}" opacity=".18" class="pulse" style="animation-delay:{t0:.2f}s"/>')
