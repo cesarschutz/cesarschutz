@@ -1,148 +1,43 @@
 <div align="center">
 
-# Cesar Schutz · capas do perfil
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/capa-dark.svg"><img src="./assets/capa-light.svg" width="100%" alt="Cesar Schutz, arquiteto de software e soluções. Linha do tempo de 2011 até hoje: estágio em Java, desenvolvedor Java SE, Java EE e JSF, microsserviços, plataforma de cartões como dev sênior em 2019, líder técnico em 2020, arquiteto desde 2021 e programa de fidelidade desde 2025, com a faixa de formação embaixo."></picture>
 
-Oito capas para escolher. Todas acompanham o tema do GitHub: clara no modo claro, escura no modo escuro.
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=2600&pause=1100&color=B1B9F9&center=true&vCenter=true&width=820&height=44&lines=Arquiteto+de+software+e+solu%C3%A7%C3%B5es;Perto+do+time:+dailys,+design+t%C3%A9cnico+e+sustenta%C3%A7%C3%A3o;Desenho+t%C3%A9cnico,+C4+e+padr%C3%B5es+que+o+time+reaproveita;Java+%C2%B7+Spring+%C2%B7+AWS+%C2%B7+Claude+Code;Programando+em+Java+desde+2011"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=2600&pause=1100&color=5A5FC8&center=true&vCenter=true&width=820&height=44&lines=Arquiteto+de+software+e+solu%C3%A7%C3%B5es;Perto+do+time:+dailys,+design+t%C3%A9cnico+e+sustenta%C3%A7%C3%A3o;Desenho+t%C3%A9cnico,+C4+e+padr%C3%B5es+que+o+time+reaproveita;Java+%C2%B7+Spring+%C2%B7+AWS+%C2%B7+Claude+Code;Programando+em+Java+desde+2011"  alt="Arquiteto de software e soluções · Perto do time: dailys, design técnico e sustentação · Desenho técnico, C4 e padrões que o time reaproveita · Java · Spring · AWS · Claude Code · Programando em Java desde 2011"></picture>
+
+<a href="https://www.linkedin.com/in/cesar-schutz-10341a21/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pill-linkedin-dark.svg"><img src="./assets/pill-linkedin-light.svg" height="42" alt="LinkedIn"></picture></a>
+<a href="https://blog.cesarschutz.com.br"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pill-blog-dark.svg"><img src="./assets/pill-blog-light.svg" height="42" alt="Blog"></picture></a>
+<a href="https://github.com/cesarschutz/claude-code-kit"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pill-kit-dark.svg"><img src="./assets/pill-kit-light.svg" height="42" alt="claude-code-kit"></picture></a>
 
 </div>
 
-## Terceira leva: versão final
+<br>
 
-O que você gostou em cada capa, misturado: a linha do tempo da 04, o estilo terminal da 03 e da 06, a stack
-por área com um `ls` por categoria, os cards de projeto da 05 com status, as estatísticas, a sequência e a cobrinha.
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/terminal-dark.svg"><img src="./assets/terminal-light.svg" width="100%" alt="Terminal com o sobre, como eu trabalho, a stack em construção e a formação"></picture>
 
-### 07 · Final
+### `~/projetos`
 
-Linha do tempo no header, pílulas de links, texto animado e todas as seções no estilo terminal (`~/sobre`,
-`~/como-eu-trabalho`, `~/stack`, `~/projetos`…).
+<p align="center">
+<a href="https://github.com/cesarschutz/claude-code-kit"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/projeto-claude-code-kit-dark.svg"><img src="./assets/projeto-claude-code-kit-light.svg" width="49%" alt="claude-code-kit"></picture></a>
+<a href="https://github.com/cesarschutz/CSRFinance"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/projeto-csrfinance-dark.svg"><img src="./assets/projeto-csrfinance-light.svg" width="49%" alt="CSRFinance"></picture></a>
+<a href="https://github.com/cesarschutz/blog"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/projeto-blog-dark.svg"><img src="./assets/projeto-blog-light.svg" width="49%" alt="blog"></picture></a>
+<a href="https://github.com/cesarschutz/blog-exemplos"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/projeto-blog-exemplos-dark.svg"><img src="./assets/projeto-blog-exemplos-light.svg" width="49%" alt="blog-exemplos"></picture></a>
+<a href="https://github.com/cesarschutz/BrainAPI"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/projeto-brainapi-dark.svg"><img src="./assets/projeto-brainapi-light.svg" width="49%" alt="BrainAPI"></picture></a>
+<a href="https://github.com/cesarschutz/swagger-agent-adk"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/projeto-swagger-agent-adk-dark.svg"><img src="./assets/projeto-swagger-agent-adk-light.svg" width="49%" alt="swagger-agent-adk"></picture></a>
+<a href="https://github.com/cesarschutz/google-adk-cards"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/projeto-google-adk-cards-dark.svg"><img src="./assets/projeto-google-adk-cards-light.svg" width="49%" alt="google-adk-cards"></picture></a>
+<a href="https://github.com/cesarschutz/knowledge-base"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/projeto-knowledge-base-dark.svg"><img src="./assets/projeto-knowledge-base-light.svg" width="49%" alt="knowledge-base"></picture></a>
+</p>
 
-<a href="./capas/07-final/">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./capas/07-final/assets/capa-dark.svg">
-  <img src="./capas/07-final/assets/capa-light.svg" width="100%" alt="Capa 07, Final">
-</picture>
-</a>
+### `~/github`
 
-**[Ver a capa completa →](./capas/07-final/)**
+<p align="center">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=cesarschutz&show_icons=true&hide_rank=true&hide=stars,issues&include_all_commits=true&locale=pt-br&theme=github_dark&bg_color=161b22&border_color=30363d"><img src="https://github-readme-stats.vercel.app/api?username=cesarschutz&show_icons=true&hide_rank=true&hide=stars,issues&include_all_commits=true&locale=pt-br&bg_color=f6f8fa&border_color=d0d7de" height="165" alt="Estatísticas do GitHub"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=cesarschutz&layout=compact&langs_count=8&locale=pt-br&theme=github_dark&bg_color=161b22&border_color=30363d"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cesarschutz&layout=compact&langs_count=8&locale=pt-br&bg_color=f6f8fa&border_color=d0d7de" height="165" alt="Linguagens mais usadas"></picture>
+</p>
 
-### 08 · Terminal final
+### `$ git log --graph`
 
-A mesma página, com o terminal `neofetch` do CSR no header e a linha do tempo descendo para `~/trajetória`.
+<p align="center">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=cesarschutz&locale=pt_BR&hide_border=true&theme=dark&background=161B22&ring=B1B9F9&fire=D77757&currStreakLabel=B1B9F9"><img src="https://streak-stats.demolab.com?user=cesarschutz&locale=pt_BR&hide_border=true&theme=default&ring=5A5FC8&fire=B4542F&currStreakLabel=5A5FC8"  alt="Sequência de contribuições no GitHub"></picture>
+</p>
 
-<a href="./capas/08-terminal-final/">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./capas/08-terminal-final/assets/capa-dark.svg">
-  <img src="./capas/08-terminal-final/assets/capa-light.svg" width="100%" alt="Capa 08, Terminal final">
-</picture>
-</a>
-
-**[Ver a capa completa →](./capas/08-terminal-final/)**
-
-## Segunda leva: sobre mim
-
-Feitas a partir da minha trajetória, do trabalho e da stack que uso de verdade.
-
-### 04 · Trajetória
-
-A linha do tempo de 2011 até hoje, do estágio em Java a arquiteto de soluções, com as fases de dev,
-líder técnico e arquiteto. Embaixo, a stack em ícones por área e o gráfico 3D de contribuições.
-
-<a href="./capas/04-trajetoria/">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./capas/04-trajetoria/assets/capa-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./capas/04-trajetoria/assets/capa-light.svg">
-  <img src="./capas/04-trajetoria/assets/capa-light.svg" width="100%" alt="Capa 04, Trajetória">
-</picture>
-</a>
-
-**[Ver a capa completa →](./capas/04-trajetoria/)**
-
-### 05 · Painel
-
-Um painel em blocos: identidade e linha do tempo, números de código e de arquitetura, como eu desenho,
-stack e IA. Embaixo, os projetos em cards.
-
-<a href="./capas/05-painel/">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./capas/05-painel/assets/capa-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./capas/05-painel/assets/capa-light.svg">
-  <img src="./capas/05-painel/assets/capa-light.svg" width="100%" alt="Capa 05, Painel">
-</picture>
-</a>
-
-**[Ver a capa completa →](./capas/05-painel/)**
-
-### 06 · Neofetch
-
-A evolução da capa 03: um terminal que roda `neofetch` com meu perfil e `ls ~/stack` com os ícones.
-Embaixo, a stack por área, os projetos, a sequência de contribuições e a cobrinha.
-
-<a href="./capas/06-neofetch/">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./capas/06-neofetch/assets/capa-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./capas/06-neofetch/assets/capa-light.svg">
-  <img src="./capas/06-neofetch/assets/capa-light.svg" width="100%" alt="Capa 06, Neofetch">
-</picture>
-</a>
-
-**[Ver a capa completa →](./capas/06-neofetch/)**
-
-## Primeira leva
-
-### 01 · Rastro
-
-O trace de uma cobrança atravessando gateway, API, ledger, outbox e fila, desenhado span a span.
-A capa para quem chega pelo lado de arquitetura e sistemas distribuídos.
-
-<a href="./capas/01-rastro/">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./capas/01-rastro/assets/capa-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./capas/01-rastro/assets/capa-light.svg">
-  <img src="./capas/01-rastro/assets/capa-light.svg" width="100%" alt="Capa 01, Rastro">
-</picture>
-</a>
-
-**[Ver a capa completa →](./capas/01-rastro/)**
-
-### 02 · Caderno
-
-Uma página de caderno com o nome escrito à caneta, a frase do blog no marca-texto e uma ficha de estudos.
-A lista de artigos se atualiza sozinha a partir do RSS. A capa para quem chega pelo blog.
-
-<a href="./capas/02-caderno/">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./capas/02-caderno/assets/capa-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./capas/02-caderno/assets/capa-light.svg">
-  <img src="./capas/02-caderno/assets/capa-light.svg" width="100%" alt="Capa 02, Caderno">
-</picture>
-</a>
-
-**[Ver a capa completa →](./capas/02-caderno/)**
-
-### 03 · Terminal
-
-Um terminal que digita `whoami`, mostra o foco e instala o `csr-cockpit`, com as cores do claude-code-kit.
-A capa para quem chega pelas ferramentas de IA.
-
-<a href="./capas/03-terminal/">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./capas/03-terminal/assets/capa-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./capas/03-terminal/assets/capa-light.svg">
-  <img src="./capas/03-terminal/assets/capa-light.svg" width="100%" alt="Capa 03, Terminal">
-</picture>
-</a>
-
-**[Ver a capa completa →](./capas/03-terminal/)**
-
----
-
-[RECURSOS.md](./RECURSOS.md) lista todos os recursos que existiam nos 10 modelos anteriores, onde cada um
-foi usado em cada capa e quais ficaram de fora (e por quê).
-
-### Como adotar uma capa
-
-1. Copie `capas/<capa>/README.md` para a raiz, por cima deste arquivo.
-2. Troque `./assets/` por `./capas/<capa>/assets/` nos caminhos das imagens.
-3. Na capa 02, troque `readme_path` em `.github/workflows/capa-02-artigos.yml` para `./README.md`.
-   Na capa 04, troque `../../profile-3d-contrib/` por `./profile-3d-contrib/`.
-4. Apague as pastas e os workflows das capas que não foram escolhidas.
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/snake-dark.svg"><img src="./assets/snake-light.svg" width="100%" alt="A cobrinha percorrendo o gráfico de contribuições do último ano"></picture>
