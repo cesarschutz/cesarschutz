@@ -1,5 +1,5 @@
-# Capa 03 · Terminal — gera a cobrinha do gráfico de contribuições (claro e escuro).
-name: capa-03 · snake
+# Capas 03 e 06 — gera a cobrinha do gráfico de contribuições (claro e escuro).
+name: capas 03 e 06 · snake
 
 on:
   schedule:
@@ -25,11 +25,13 @@ jobs:
           outputs: |
             capas/03-terminal/assets/snake-light.svg?palette=github-light&color_snake=#5a5fc8
             capas/03-terminal/assets/snake-dark.svg?palette=github-dark&color_snake=#b1b9f9
+            capas/06-neofetch/assets/snake-light.svg?palette=github-light&color_snake=#5a5fc8
+            capas/06-neofetch/assets/snake-dark.svg?palette=github-dark&color_snake=#b1b9f9
       - name: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add capas/03-terminal/assets/snake-*.svg
-          git diff --cached --quiet || git commit -m "chore(capa-03): atualiza snake"
+          git add capas/03-terminal/assets/snake-*.svg capas/06-neofetch/assets/snake-*.svg
+          git diff --cached --quiet || git commit -m "chore(capas): atualiza snake"
           git pull --rebase origin main
           git push

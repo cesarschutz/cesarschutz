@@ -4,7 +4,11 @@ Levantamento feito nas 10 branches `modelo-01` a `modelo-10` (README + SVGs de c
 rascunhos `modelos/*.md` que ficavam na `main`. Recursos repetidos entre modelos aparecem uma vez só,
 com todos os modelos onde apareciam.
 
-Legenda das capas: **C1** = [01 · Rastro](./capas/01-rastro/) · **C2** = [02 · Caderno](./capas/02-caderno/) · **C3** = [03 · Terminal](./capas/03-terminal/)
+Legenda das capas: **C1** = [01 · Rastro](./capas/01-rastro/) · **C2** = [02 · Caderno](./capas/02-caderno/) · **C3** = [03 · Terminal](./capas/03-terminal/) ·
+**C4** = [04 · Trajetória](./capas/04-trajetoria/) · **C5** = [05 · Painel](./capas/05-painel/) · **C6** = [06 · Neofetch](./capas/06-neofetch/)
+
+As seções 1 a 3 descrevem a primeira leva (C1–C3). A seção 4 mostra onde cada recurso entrou na segunda
+leva (C4–C6), que fala da minha trajetória em vez do blog.
 
 ## Resumo
 
@@ -100,7 +104,56 @@ Legenda das capas: **C1** = [01 · Rastro](./capas/01-rastro/) · **C2** = [02 �
 | Seções recolhíveis com `<details>`, no formato de decisão (contexto · decisão · consequência) | C2: **Decisões que eu repito** |
 | Cores próprias por tema também nos serviços externos (skillicons, typing, stats, streak) | C1 · C3 |
 
-## 4. Modo claro e escuro: dá?
+## 4. Segunda leva (C4–C6)
+
+### Recursos dos modelos antigos reaproveitados
+
+| # | Recurso | C4 · Trajetória | C5 · Painel | C6 · Neofetch |
+|---|---|---|---|---|
+| 1, 2 | Banner SVG autoral claro/escuro | capa | capa | capa e faixas de stack |
+| 3 | Pulso de opacidade | ponto "hoje" na linha do tempo | — | `online` na barra de status |
+| 4 | Cursor piscando | — | — | último prompt |
+| 5 | Elemento percorrendo um caminho | — | evento indo de API até worker no mini C4 | — |
+| 6 | Traço que se desenha | linha do tempo de 2013 a 2026 | linha do tempo da identidade | — |
+| 8 | Janela de terminal | — | — | capa inteira |
+| 10 | `readme-typing-svg` | — | — | abaixo da capa |
+| 11 | Ícones da stack (skillicons) | painel **Stack** por área | bloco **Stack do dia a dia** | `ls ~/stack` na capa e tabela **`~/stack`** |
+| 12, 13 | `github-readme-stats` (stats e linguagens) | — | seção **GitHub** | — |
+| 14 | Streak de contribuições | — | — | **`$ git log --graph`** |
+| 15 | Badges `shields.io` | LinkedIn, blog, claude-code-kit | LinkedIn, blog | LinkedIn, blog, claude-code-kit |
+| 19 | Tabela Markdown | **Formação** e **Projetos pessoais** | **Stack completa** | **`~/stack`** e **`~/projetos`** |
+| 20 | Grade com `<table>` HTML | **O que eu faço** | — | — |
+| 17 | Bloco `console` | — | — | **`~/sobre`** |
+| 28 | Snake | — | — | fim da página (workflow `capas-snake.yml`) |
+
+Não entraram na segunda leva: Mermaid (#16), artigos via RSS (#27) e o traço de trace da C1, porque
+eram conteúdo do blog e não sobre mim.
+
+### Recursos novos da segunda leva
+
+| Recurso | Onde |
+|---|---|
+| Linha do tempo animada com a trajetória real (2013, 2019, 2020–2024 como dev, 2025 arquiteto) | C4 (capa) · C5 (identidade) |
+| Números do trabalho: 40 serviços, 2.300+ commits em código, 3.700+ em documentação de arquitetura | C4 · C5 · C6 |
+| Ícones da stack **dentro** do SVG, com animação de entrada um a um | C4 · C5 · C6 |
+| Ícones que o skillicons não tem (Quarkus, Dynatrace, Jaeger, Cucumber, JUnit, Claude, MCP, LangChain, Mermaid, Excalidraw, Serverless, Keycloak) desenhados no mesmo molde, a partir do Simple Icons | C4 · C5 · C6 |
+| Ícones de texto para o que não tem logo (ADR, C4/Structurizr, PlantUML, SNS/SQS, Google ADK) | C4 · C6 |
+| Painel em blocos (bento) | C5 |
+| `neofetch` como cartão de visita | C6 |
+| Mini diagrama C4 animado | C5 |
+| Cards de repositório (`github-readme-stats` pin) com tema claro/escuro | C5 · **Projetos** |
+| Gráfico 3D de contribuições (`github-profile-3d-contrib`) | C4 · **Contribuições** (workflow `capa-04-3d.yml`) |
+| Stack completa recolhível com `<details>` | C5 |
+
+### De onde veio o conteúdo
+
+- **Trajetória e números:** histórico de commits dos repositórios de trabalho (2019 a 2026) e datas dos
+  repositórios públicos.
+- **Stack:** arquivos de build dos serviços (`build.gradle`, `package.json`, Terraform, Serverless/SAM).
+- **O que eu faço:** as ADRs e a forma como elas são escritas (ADR curta, C4 no Structurizr, padrões).
+- Nada interno aparece nas capas: nenhum nome de ADR, sistema, parceiro ou endereço da empresa.
+
+## 5. Modo claro e escuro: dá?
 
 **Dá, e as três capas já fazem isso.** Existem dois jeitos:
 

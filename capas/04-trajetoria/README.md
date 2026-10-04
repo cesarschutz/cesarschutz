@@ -1,0 +1,88 @@
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/capa-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/capa-light.svg">
+  <img src="./assets/capa-light.svg" width="100%" alt="Cesar Schutz, arquiteto de software. Linha do tempo de 2013 até hoje: primeiros sistemas em Java, pós em sistemas distribuídos, dev back-end da plataforma de cartões de 2019 a 2024 e arquiteto desde 2025.">
+</picture>
+
+<br>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Cesar%20Schutz-0A66C2?style=for-the-badge)](https://www.linkedin.com/in/cesar-schutz-10341a21/)
+[![Blog](https://img.shields.io/badge/Blog-blog.cesarschutz.com.br-30363d?style=for-the-badge&logo=astro&logoColor=white)](https://blog.cesarschutz.com.br)
+[![claude-code-kit](https://img.shields.io/badge/claude--code--kit-plugins-D97757?style=for-the-badge&logo=claude&logoColor=white)](https://github.com/cesarschutz/claude-code-kit)
+
+</div>
+
+## Sobre
+
+Sou arquiteto de software. Entrei na plataforma de cartões em 2019 como desenvolvedor back-end e
+passei cinco anos escrevendo os serviços dela: contas, faturas, propostas, boletos, open banking e
+carteiras digitais. Em 2025 passei para a arquitetura dessa mesma plataforma e do programa de fidelidade.
+
+Conhecer o código por dentro muda a forma de decidir. Hoje meu trabalho é decidir e registrar: ADRs
+curtas, modelo C4 e padrões que o time reaproveita.
+
+## O que eu faço
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+**Decisões**
+
+ADRs com contexto, decisão, alternativas que foram de fato avaliadas e consequências. Curtas, para
+serem lidas.
+
+</td>
+<td width="33%" valign="top">
+
+**Modelos**
+
+C4 no Structurizr (contexto, containers e fluxos dinâmicos), sequência em PlantUML e Mermaid,
+publicados na wiki do time.
+
+</td>
+<td width="33%" valign="top">
+
+**Padrões**
+
+Transactional Outbox, Job Pattern no Kubernetes, idempotência e eventos com SNS/SQS, escritos uma vez
+e reaproveitados nas ADRs.
+
+</td>
+</tr>
+</table>
+
+## Stack
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/stack-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/stack-light.svg">
+  <img src="./assets/stack-light.svg" width="100%" alt="Stack: Java, Spring, Quarkus, Node.js, TypeScript, React; Kafka, SNS/SQS, MongoDB, PostgreSQL, DynamoDB; AWS, Kubernetes, Docker, Terraform, Serverless, Azure DevOps; JUnit, Cucumber, Dynatrace, Prometheus, Jaeger; ADR, Structurizr, PlantUML, Mermaid, Excalidraw; Claude Code, MCP, LangChain, Google ADK, Python.">
+</picture>
+
+## Formação
+
+| | |
+|---|---|
+| Pós-graduação | Arquitetura de Sistemas Distribuídos |
+| Pós-graduação | Arquitetura de Software · Full Cycle |
+| MBA | Engenharia de Software com IA · Full Cycle |
+
+## Projetos pessoais
+
+| Projeto | O que é |
+|---|---|
+| [claude-code-kit](https://github.com/cesarschutz/claude-code-kit) | Marketplace de plugins para o Claude Code: mods, skills, agentes, hooks e temas. |
+| [BrainAPI](https://github.com/cesarschutz/BrainAPI) | Transforma specs OpenAPI em endpoints usáveis em linguagem natural, via MCP. |
+| [swagger-agent-adk](https://github.com/cesarschutz/swagger-agent-adk) | Agentes para APIs Swagger com Google ADK. |
+| [blog](https://github.com/cesarschutz/blog) | O código do meu blog técnico, em Astro. |
+
+## Contribuições
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../../profile-3d-contrib/profile-night-rainbow.svg">
+  <source media="(prefers-color-scheme: light)" srcset="../../profile-3d-contrib/profile-green-animate.svg">
+  <img src="../../profile-3d-contrib/profile-green-animate.svg" width="100%" alt="Gráfico 3D de contribuições no GitHub">
+</picture>
