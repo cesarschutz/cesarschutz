@@ -16,18 +16,7 @@ RAIZ = Path(__file__).resolve().parent.parent
 
 SOBRE = ("Sou arquiteto de software e soluções. Programo em Java desde 2011 e estou na plataforma de cartões desde "
          "2019, onde fui dev sênior, líder técnico e, desde 2021, arquiteto. Desde 2025 também cuido da arquitetura "
-         "do programa de fidelidade.",
-         "Trabalho perto do time: estou nas dailys, desenho a solução junto com os devs e continuo discutindo "
-         "código, porque é ali que a decisão de arquitetura se prova.")
-
-PERTO = ["participo das dailys",
-         "desenho técnico junto com os devs",
-         "apoio à sustentação quando o problema aparece em produção",
-         "atualização de versões: Java, Spring Boot e dependências",
-         "discussão de código e revisão de design"]
-DESENHO = ["decisões técnicas tomadas com o time, com alternativas e consequências claras",
-           "modelo C4 no Structurizr e fluxos em PlantUML e Mermaid",
-           "padrões que o time reaproveita, como Transactional Outbox, Job Pattern, idempotência e eventos com SNS/SQS"]
+         "do programa de fidelidade.",)
 
 FORMACAO = [  # período, título, detalhe, tipo (andamento | cert | None)
     ("2025 – 2026", "MBA em Arquitetura de Software", "Full Cycle  ·  em andamento", "andamento"),
@@ -258,32 +247,6 @@ def terminal(p):
     relogio = fim + 0.4 + k * 0.08
     y += 22
 
-    # como eu trabalho
-    fim = comando("cat como-eu-trabalho.md", relogio)
-    y += 48
-    secao("como eu trabalho", fim + 0.1, "terra")
-    y += 30
-    gap = 24
-    colw = (largura - gap) / 2
-    blocos = [(tit, cor, [textwrap.wrap(it, 42) for it in itens])
-              for tit, cor, itens in (("perto do time", "lav", PERTO), ("decisões e desenho", "orange", DESENHO))]
-    lh = 30
-    h = max(84 + sum(len(l) * lh + 14 for l in ls) + 8 for _, _, ls in blocos)
-    for ci, (tit, cor, linhas) in enumerate(blocos):
-        cx, t0 = X + ci * (colw + gap), fim + 0.2 + ci * 0.15
-        b.append(f'<rect x="{cx:.1f}" y="{y}" width="{colw:.1f}" height="{h}" rx="14" fill="{p["card"]}" stroke="{p["border"]}" class="f" {d(t0)}/>')
-        b.append(f'<rect x="{cx:.1f}" y="{y}" width="5" height="{h}" rx="2.5" fill="{p[cor]}" class="f" {d(t0)}/>')
-        b.append(f'<g class="f" {d(t0)}>' + text(tit, cx + 28, y + 46, 25, p[cor], "sans b") + "</g>")
-        yy = y + 90
-        for i, partes in enumerate(linhas):
-            ti = t0 + 0.25 + i * 0.12
-            b.append(f'<circle cx="{cx + 34:.1f}" cy="{yy - 7}" r="5" fill="{p[cor]}" class="pop" {d(ti)}/>')
-            for j, linha in enumerate(partes):
-                b.append(f'<g class="f" {d(ti)}>' + text(linha, cx + 54, yy + j * lh, 21, p["fg"]) + "</g>")
-            yy += len(partes) * lh + 14
-    relogio = fim + 0.6 + max(len(PERTO), len(DESENHO)) * 0.12
-    y += h + 52
-
     # stack (em construção)
     fim = comando("ls stack/", relogio)
     y += 48
@@ -346,8 +309,7 @@ def terminal(p):
     moldura.append(f'<circle cx="{W - 110}" cy="{sy + 27}" r="6" fill="{p["green"]}" class="pulse"/>')
     moldura.append(mono("online", W - 96, sy + 33, fs, p["muted"]))
 
-    alt = ("Terminal do perfil. Sobre: " + " ".join(SOBRE) + " Como eu trabalho, perto do time: " + "; ".join(PERTO)
-           + ". Decisões e desenho: " + "; ".join(DESENHO) + ". Stack: em construção. Formação: "
+    alt = ("Terminal do perfil. Sobre: " + " ".join(SOBRE) + " Stack: em construção. Formação: "
            + "; ".join(f"{t}, {dd}, {pp}" for pp, t, dd, _ in FORMACAO) + ".")
     return svg(W, H, alt, "\n".join(moldura + b), "".join(dig.defs + defs))
 
