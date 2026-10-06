@@ -12,7 +12,7 @@
 
 <br>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/terminal-dark.svg"><img src="./assets/terminal-light.svg" width="100%" alt="Terminal com o sobre, como eu trabalho, a stack em construção e a formação"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/terminal-dark.svg"><img src="./assets/terminal-light.svg" width="100%" alt="Terminal com o sobre, a stack em construção e a formação"></picture>
 
 ### `~/projetos`
 
