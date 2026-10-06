@@ -120,7 +120,7 @@ def cabecalho(p):
     b.append(f'<g class="f" {d(0.1)}>' + mono("ARQUITETO DE SOFTWARE E SOLUÇÕES", 64, 80, 17, p["blue"], 'letter-spacing="3"', "mono b") + "</g>")
     b.append(text("Cesar Schutz", 62, 150, 66, p["fg"], "sans b u", d(0.25)))
     b.append(text("Programo em Java desde 2011. Na plataforma de cartões desde 2019:", 64, 198, 23, p["muted"], "sans u", d(0.45)))
-    b.append(text("dev sênior, líder técnico e, desde 2021, arquiteto perto do time.", 64, 230, 23, p["muted"], "sans u", d(0.55)))
+    b.append(text("dev sênior, líder técnico e, desde 2021, arquiteto próximo do time.", 64, 230, 23, p["muted"], "sans u", d(0.55)))
     for i, (num, linhas) in enumerate([("2011", ["Java desde", "o estágio"]), ("2021", ["arquiteto de", "software e", "soluções"])]):
         x, t0 = 880 + i * 160, 0.7 + i * 0.15
         g = [f'<path d="M{x - 22} 58V196" stroke="{p["border"]}"/>' if i else "", text(num, x, 116, 42, p["fg"], "sans b")]
