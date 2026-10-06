@@ -159,7 +159,7 @@ def cabecalho(p):
                                   (2015.37, 1, "Java EE e JSF", "sistemas web", "blue"),
                                   (2017.7, 2, "microsserviços", "Spring Cloud e Angular", "blue"),
                                   (2019.92, 1, "plataforma de cartões", "dev Java sênior", "green"),
-                                  (2021.92, 2, "arquiteto de software", "e soluções, perto do time", "orange"),
+                                  (2021.92, 2, "arquiteto de software", "e soluções, próximo do time", "orange"),
                                   (2025.85, 1, "programa de fidelidade", "motor de pontos", "orange")):
         x, t0 = yx(yr), t_of(yr)
         top = ly - (46 if tier == 1 else 106)
