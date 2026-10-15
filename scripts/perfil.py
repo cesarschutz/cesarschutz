@@ -14,7 +14,7 @@ RAIZ = Path(__file__).resolve().parent.parent
 
 # ---------------------------------------------------------------- conteúdo
 
-SOBRE = ("Sou arquiteto de software e soluções. Programo em Java desde 2011 e estou na plataforma de cartões desde "
+SOBRE = ("Trabalho com arquitetura e engenharia de software. Programo em Java desde 2011 e estou na plataforma de cartões desde "
          "2019, onde fui dev sênior, líder técnico e, desde 2021, arquiteto. Desde 2025 também cuido da arquitetura "
          "do programa de fidelidade.",)
 
@@ -117,10 +117,10 @@ class Digitador:
 def cabecalho(p):
     W, H = 1200, 632
     b = [f'<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="16" fill="{p["hdr"]}" stroke="{p["border"]}"/>']
-    b.append(f'<g class="f" {d(0.1)}>' + mono("ARQUITETO DE SOFTWARE E SOLUÇÕES", 64, 80, 17, p["blue"], 'letter-spacing="3"', "mono b") + "</g>")
+    b.append(f'<g class="f" {d(0.1)}>' + mono("ARQUITETURA E ENGENHARIA DE SOFTWARE", 64, 80, 17, p["blue"], 'letter-spacing="3"', "mono b") + "</g>")
     b.append(text("Cesar Schutz", 62, 150, 66, p["fg"], "sans b u", d(0.25)))
     b.append(text("Programo em Java desde 2011. Na plataforma de cartões desde 2019:", 64, 198, 23, p["muted"], "sans u", d(0.45)))
-    b.append(text("dev sênior, líder técnico e, desde 2021, arquiteto próximo do time.", 64, 230, 23, p["muted"], "sans u", d(0.55)))
+    b.append(text("dev sênior, líder técnico e, desde 2021, arquiteto, do desenho ao código.", 64, 230, 23, p["muted"], "sans u", d(0.55)))
     for i, (num, linhas) in enumerate([("2011", ["Java desde", "o estágio"]), ("2021", ["arquiteto de", "software e", "soluções"])]):
         x, t0 = 880 + i * 160, 0.7 + i * 0.15
         g = [f'<path d="M{x - 22} 58V196" stroke="{p["border"]}"/>' if i else "", text(num, x, 116, 42, p["fg"], "sans b")]
@@ -159,7 +159,7 @@ def cabecalho(p):
                                   (2015.37, 1, "Java EE e JSF", "sistemas web", "blue"),
                                   (2017.7, 2, "microsserviços", "Spring Cloud e Angular", "blue"),
                                   (2019.92, 1, "plataforma de cartões", "dev Java sênior", "green"),
-                                  (2021.92, 2, "arquiteto de software", "e soluções, próximo do time", "orange"),
+                                  (2021.92, 2, "arquiteto de software", "e soluções", "orange"),
                                   (2025.85, 1, "programa de fidelidade", "motor de pontos", "orange")):
         x, t0 = yx(yr), t_of(yr)
         top = ly - (46 if tier == 1 else 106)
@@ -202,7 +202,7 @@ def cabecalho(p):
     b.append(f'<circle cx="{xe:.1f}" cy="{ly}" r="8" fill="{p["orange"]}" class="pop" {d(t0)}/>')
     b.append(f'<g class="f" {d(t0 + 0.1)}>' + mono("hoje", xe + 24, ly + 6, 17, p["orange"], cls="mono b") + "</g>")
 
-    alt = ("Cesar Schutz, arquiteto de software e soluções. Linha do tempo de 2011 até hoje: estágio em Java de 2011 a 2013, "
+    alt = ("Cesar Schutz: arquitetura e engenharia de software. Linha do tempo de 2011 até hoje: estágio em Java de 2011 a 2013, "
            "desenvolvedor Java SE em 2013, Java EE e JSF em 2015, microsserviços em 2017, plataforma de cartões como dev sênior "
            "em 2019, líder técnico em 2020, arquiteto de software e soluções desde 2021 e programa de fidelidade desde 2025. "
            "Formação: tecnólogo em ADS, pós em engenharia de software, MBAs em arquitetura de software e em engenharia de "
@@ -305,7 +305,7 @@ def terminal(p):
     pw = len(pill) * fs * 0.6
     moldura.append(f'<rect x="20" y="{sy + 12}" width="{pw:.0f}" height="30" rx="15" fill="{p["lav"]}"/>')
     moldura.append(mono(pill, 20, sy + 33, fs, p["pill_fg"], cls="mono b"))
-    moldura.append(mono("arquiteto de software e soluções  ·  java · spring · aws", 20 + pw + 18, sy + 33, fs, p["muted"]))
+    moldura.append(mono("arquitetura e engenharia  ·  java · spring · aws", 20 + pw + 18, sy + 33, fs, p["muted"]))
     moldura.append(f'<circle cx="{W - 110}" cy="{sy + 27}" r="6" fill="{p["green"]}" class="pulse"/>')
     moldura.append(mono("online", W - 96, sy + 33, fs, p["muted"]))
 
